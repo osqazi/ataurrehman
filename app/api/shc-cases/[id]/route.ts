@@ -8,6 +8,7 @@ export async function GET(
   const { id } = context.params;        // ✅ no await
   const caseId = Number(id);
   
+  
   const url = `https://cases.shc.gov.pk/khi/web/index.php?r=cases%2Fview&id=${caseId}`;
   
   try {
