@@ -3,12 +3,11 @@ import * as cheerio from 'cheerio';
 
 export async function GET(
   request: NextRequest,
-  context: { params: Promise<{ id: string }> }   // 👈 note: params is now a Promise
+  context: { params: { id: string } }   // ✅ sync form
 ) {
-  const { id } = await context.params;           // 👈 must await now
-
+  const { id } = context.params;        // ✅ no await
   const caseId = Number(id);
-
+  
   const url = `https://cases.shc.gov.pk/khi/web/index.php?r=cases%2Fview&id=${caseId}`;
   
   try {
