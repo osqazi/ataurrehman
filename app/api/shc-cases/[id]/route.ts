@@ -3,9 +3,11 @@ import * as cheerio from 'cheerio';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  context: { params: { id: string } }
 ) {
-  const caseId = params.id;
+  const { id } = context.params;
+
+  const caseId = id;
   const url = `https://cases.shc.gov.pk/khi/web/index.php?r=cases%2Fview&id=${caseId}`;
   
   try {
