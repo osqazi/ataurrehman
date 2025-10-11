@@ -1,18 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import * as cheerio from 'cheerio';
 
-// export async function GET(
-//   request: NextRequest,
-//   context: { params: Promise<{ id: string }> }   // ✅ sync form
-// ) {
-//   const { id } = (await context.params);        // ✅ no await
-//   const caseId = Number(id);
-
-
-// interface CaseContext {
-//   params: { id: string } | Promise<{ id: string }>;
-// }
-
 export async function GET(
   request: NextRequest,
   context: { params: Promise<{ id: string }> }
