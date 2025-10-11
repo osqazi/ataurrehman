@@ -8,13 +8,14 @@ import * as cheerio from 'cheerio';
 //   const { id } = (await context.params);        // ✅ no await
 //   const caseId = Number(id);
 
-export async function GET(
-  request: Request,
-  context: any
-) {
-  const id = Number(context.params.id);
-   const caseId = id;
+export async function GET(request: Request, context: any) {
+  // Handle both new (Promise) and old (sync) params versions
+  const params = context.params instanceof Promise
+    ? await context.params
+    : context.params;
 
+  const id = Number(params.id);
+  const caseId = id;
 
   
   const url = `https://cases.shc.gov.pk/khi/web/index.php?r=cases%2Fview&id=${caseId}`;
