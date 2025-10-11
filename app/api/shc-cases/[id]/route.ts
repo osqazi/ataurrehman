@@ -9,19 +9,16 @@ import * as cheerio from 'cheerio';
 //   const caseId = Number(id);
 
 
-interface CaseContext {
-  params: { id: string } | Promise<{ id: string }>;
-}
+// interface CaseContext {
+//   params: { id: string } | Promise<{ id: string }>;
+// }
 
 export async function GET(
-  request: Request,
-  context: CaseContext
+  request: NextRequest,
+  context: { params: Promise<{ id: string }> }
 ) {
-    const params =
-    context.params instanceof Promise ? await context.params : context.params;
-
-  const id = Number(params.id);
-  const caseId = id;
+  const { id } = await context.params; // ✅ await the Promise
+  const caseId = Number(id);
 
   
   const url = `https://cases.shc.gov.pk/khi/web/index.php?r=cases%2Fview&id=${caseId}`;
