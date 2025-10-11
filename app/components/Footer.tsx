@@ -64,7 +64,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
           <p>&copy; 2024 Ata-ur-Rehman & Co. All rights reserved.</p>
-          <p>Deveoloped by: MetaLog Inc. &copy;</p>
+          <p>Deveoloped by: MetaLog Inc. &copy; - </p>
         </div>
       </div>
     </footer>
