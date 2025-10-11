@@ -1,13 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server';
 import * as cheerio from 'cheerio';
 
+// export async function GET(
+//   request: NextRequest,
+//   context: { params: Promise<{ id: string }> }   // ✅ sync form
+// ) {
+//   const { id } = (await context.params);        // ✅ no await
+//   const caseId = Number(id);
+
 export async function GET(
-  request: NextRequest,
-  context: { params: Promise<{ id: string }> }   // ✅ sync form
+  request: Request,
+  context: any
 ) {
-  const { id } = (await context.params);        // ✅ no await
-  const caseId = Number(id);
-  
+  const id = Number(context.params.id);
+   const caseId = id;
+
+
   
   const url = `https://cases.shc.gov.pk/khi/web/index.php?r=cases%2Fview&id=${caseId}`;
   
