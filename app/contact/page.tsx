@@ -1,0 +1,120 @@
+import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
+import ContactForm from '@/app/components/ContactForm';
+import { Phone, Mail, MapPin, Clock, Scale } from 'lucide-react';
+import LocationMap from '../components/LocationMap';
+
+export default function Contact() {
+  return (
+    <div className="min-h-screen">
+      <Header />
+      
+      {/* Contact Header */}
+      <section className="bg-primary-700 text-white">
+        <div className="container-custom section-padding">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+            <p className="text-xl text-primary-100">
+              Ready to discuss your legal needs? Book a consultation with our expert team today.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Content */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Contact Form */}
+            <div className="lg:col-span-2">
+              <ContactForm />
+            </div>
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              {/* Office Info */}
+              <div className="bg-white rounded-2xl shadow-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                  <Scale className="h-6 w-6 text-primary-600 mr-2" />
+                  Office Information
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <MapPin className="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-gray-900">Main Office</p>
+                      <p className="text-gray-600">202, Al Ameera Center, Opp. Passport Office</p>
+                      <p className="text-gray-600">Karachi, Pakistan</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <Phone className="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-gray-900">Phone</p>
+                      <p className="text-gray-600">+92-XXX-XXXXXXX</p>
+                      <p className="text-gray-600">+92-XXX-XXXXXXX</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <Mail className="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-gray-900">Email</p>
+                      <p className="text-gray-600">info@ataurrehmanlaw.com</p>
+                      <p className="text-gray-600">consult@ataurrehmanlaw.com</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <Clock className="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-gray-900">Office Hours</p>
+                      <p className="text-gray-600">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                      <p className="text-gray-600">Sat: 9:00 AM - 1:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <LocationMap/>
+
+              {/* Emergency Contact */}
+              <div className="bg-primary-50 border border-primary-200 rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-primary-900 mb-3">Emergency Legal Assistance</h3>
+                <p className="text-primary-700 mb-4">
+                  For urgent legal matters requiring immediate attention outside office hours.
+                </p>
+                <div className="bg-primary-100 rounded-lg p-4">
+                  <p className="font-semibold text-primary-900">Emergency Hotline</p>
+                  <p className="text-primary-700 text-lg font-bold">+92-XXX-EMERGENCY</p>
+                  <p className="text-primary-600 text-sm mt-1">Available 24/7 for genuine emergencies</p>
+                </div>
+              </div>
+
+              {/* Consultation Types
+              <div className="bg-white rounded-2xl shadow-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Consultation Options</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                    <span className="font-medium">Online Consultation</span>
+                    <span className="text-primary-600 font-semibold">Free</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                    <span className="font-medium">Phone Consultation</span>
+                    <span className="text-primary-600 font-semibold">Free</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                    <span className="font-medium">Office Consultation</span>
+                    <span className="text-primary-600 font-semibold">Free</span>
+                  </div>
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}

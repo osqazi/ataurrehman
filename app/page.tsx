@@ -1,103 +1,213 @@
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
+import ServiceCard from "@/app/components/ServiceCard";
+import Link from "next/link";
+import {
+  Scale,
+  Shield,
+  Users,
+  Home as HomeIcon,
+  Briefcase,
+  Heart,
+  Building,
+  Award,
+} from "lucide-react";
 import Image from "next/image";
+import heroimg from "@/public/hero.jpg";
+import officimg from "@/public/office.jpg";
+
+const services = [
+  {
+    icon: <Briefcase className="h-8 w-8" />,
+    title: "Corporate Advisory",
+    description:
+      "Expert guidance on corporate governance, compliance, and business transactions.",
+  },
+  {
+    icon: <Scale className="h-8 w-8" />,
+    title: "Litigation & Dispute Resolution",
+    description:
+      "Comprehensive legal representation in civil and commercial disputes.",
+  },
+  {
+    icon: <Shield className="h-8 w-8" />,
+    title: "Criminal Defense",
+    description:
+      "Aggressive defense strategies to protect your rights and freedom.",
+  },
+  {
+    icon: <Heart className="h-8 w-8" />,
+    title: "Family Law & Divorce",
+    description:
+      "Compassionate legal support for family matters and divorce proceedings.",
+  },
+  {
+    icon: <HomeIcon className="h-8 w-8" />,
+    title: "Real Estate & Property",
+    description:
+      "Expert handling of property transactions, disputes, and real estate law.",
+  },
+  {
+    icon: <Award className="h-8 w-8" />,
+    title: "Intellectual Property",
+    description:
+      "Protection and enforcement of your intellectual property rights.",
+  },
+  {
+    icon: <Users className="h-8 w-8" />,
+    title: "Employment Law",
+    description:
+      "Legal advice on employment contracts, disputes, and labor laws.",
+  },
+  {
+    icon: <Building className="h-8 w-8" />,
+    title: "Arbitrator",
+    description:
+      "Neutral arbitration services for efficient dispute resolution.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen">
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-primary-700 to-primary-900 text-white min-h-[400px] flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={heroimg}
+            alt="Law firm hero background"
+            fill
+            className="object-fill"
+            priority
+          />
+          {/* Overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Content */}
+        <div className="container-custom section-padding relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Justice. Integrity. Excellence.
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-white">
+              Premier legal services with over 25 years of trusted expertise
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact"
+                className="btn-primary bg-white text-primary-700 hover:bg-gray-100"
+              >
+                Book Consultation
+              </Link>
+              <Link
+                href="/services"
+                className="btn-secondary border-white text-white hover:bg-white hover:text-primary-700"
+              >
+                Our Services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Preview */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Legal Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Comprehensive legal solutions tailored to meet your unique needs
+              with expertise and dedication.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.slice(0, 4).map((service, index) => (
+              <ServiceCard key={index} {...service} />
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/services" className="btn-primary">
+              View All Services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Why Choose Ata-ur-Rehman & Co.?
+              </h2>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary-100 p-2 rounded-lg">
+                    <Award className="h-6 w-6 text-primary-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Expert Team</h3>
+                    <p className="text-gray-600">
+                      Former judges and senior advocates with decades of
+                      experience.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary-100 p-2 rounded-lg">
+                    <Scale className="h-6 w-6 text-primary-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">
+                      Proven Track Record
+                    </h3>
+                    <p className="text-gray-600">
+                      Thousands of successful cases and satisfied clients.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary-100 p-2 rounded-lg">
+                    <Users className="h-6 w-6 text-primary-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Client-Focused</h3>
+                    <p className="text-gray-600">
+                      Personalized attention and strategic legal solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-100 rounded-2xl p-3">
+  {/* Image Container */}
+  <div className="relative rounded-lg h-64 overflow-hidden">
+    <Image
+      src={officimg}
+      alt="Law firm office interior"
+      fill
+      className="object-cover"
+      priority
+    />
+    {/* Optional overlay for better text readability if needed */}
+    <div className="absolute inset-0 bg-black/20"></div>
+  </div>
+</div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }
