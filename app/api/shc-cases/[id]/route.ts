@@ -3,9 +3,9 @@ import * as cheerio from 'cheerio';
 
 export async function GET(
   request: NextRequest,
-  context: { params: { id: string } }   // ✅ sync form
+  context: { params: Promise<{ id: string }> }   // ✅ sync form
 ) {
-  const { id } = context.params;        // ✅ no await
+  const { id } = (await context.params);        // ✅ no await
   const caseId = Number(id);
   
   
