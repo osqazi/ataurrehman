@@ -237,7 +237,7 @@ import {
   Gavel,
 } from "lucide-react";
 import Image from "next/image";
-import heroimg from "@/public/hero.jpg";
+import heroimg from "@/public/hero.png";
 
 interface OfficeSection {
   id: number;
@@ -258,42 +258,42 @@ interface AlternatingSectionProps {
 const officeSections = [
   {
     id: 1,
-    image: "/office1.jpg",
+    image: "/office1.png",
     title: "Our Legacy",
     content: "The practice was established in 1972 in Karachi by Justice (Retd.) Ata-ur-Rehman under whose able guidance it blossomed into one of the most reputable chambers in the city. With over 50 years of excellence, we continue to uphold the highest standards of legal practice.",
     icon: <Award className="h-6 w-6" />
   },
   {
     id: 2,
-    image: "/office2.jpg",
+    image: "/office2.png",
     title: "Expert Leadership",
     content: "Justice (Retd.) Ata-ur-Rehman, remained an advocate of the High Court and an Advocate of the Supreme Court of Pakistan, after which he was elevated to the bench on 27.05.1998, till his retirement on 17.07.2005 as a Senior Puisne Judge of the High Court of Sindh at Karachi.",
     icon: <UserCheck className="h-6 w-6" />
   },
   {
     id: 3,
-    image: "/office3.jpg",
+    image: "/office3.png",
     title: "Modern Practice",
     content: "Mr. Obaid-ur-Rehman Khan, is an enrolled advocate of the Hon'ble Supreme Court of Pakistan. He has done his bachelors in English Literature from University of Karachi, after which he graduated with his LL.B. from Hamdard School of Law, Hamdard University with two gold medals.",
     icon: <BookOpen className="h-6 w-6" />
   },
   {
     id: 4,
-    image: "/office4.jpg",
+    image: "/office4.png",
     title: "Comprehensive Services",
     content: "We provide a comprehensive range of legal services dealing with matters in the District Courts, National Accountability Courts, Banking Courts, all Special Courts in Karachi, the High Courts of Pakistan, and the Hon'ble Supreme Court of Pakistan.",
     icon: <Gavel className="h-6 w-6" />
   },
   {
     id: 5,
-    image: "/office5.jpg",
+    image: "/office5.png",
     title: "Professional Team",
     content: "The practice has a total strength of 7 lawyers, 4 court clerks and a stenographer. Our team combines decades of experience with fresh perspectives to provide comprehensive legal solutions.",
     icon: <TeamIcon className="h-6 w-6" />
   },
   {
     id: 6,
-    image: "/office6.jpg",
+    image: "/office6.png",
     title: "Client Confidentiality",
     content: "We pride ourselves on maintaining the confidentiality of our clients which includes ultra high net worth individuals, former heads of state, members of parliament, multinational corporations, and financial institutions.",
     icon: <ShieldCheck className="h-6 w-6" />
@@ -610,7 +610,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="relative rounded-lg h-80 overflow-hidden">
                 <Image
-                  src="/office.jpg"
+                  src="/office.png"
                   alt="Law firm office interior"
                   fill
                   className="object-cover"
