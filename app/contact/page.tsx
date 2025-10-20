@@ -43,7 +43,8 @@ export default function Contact() {
                     <MapPin className="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-gray-900">Main Office</p>
-                      <p className="text-gray-600">202, Al Ameera Center, Opp. Passport Office</p>
+                      <p className="text-gray-600">206, Al Ameera Center, Near Passport Office</p>
+                      <p className="text-gray-600">Shahrah-e-Iraq, Saddar</p>
                       <p className="text-gray-600">Karachi, Pakistan</p>
                     </div>
                   </div>
@@ -52,8 +53,8 @@ export default function Contact() {
                     <Phone className="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-gray-900">Phone</p>
-                      <p className="text-gray-600">+92-XXX-XXXXXXX</p>
-                      <p className="text-gray-600">+92-XXX-XXXXXXX</p>
+                      <p className="text-gray-600">+92-21-35685596</p>
+                      <p className="text-gray-600">+92-21-35686689</p>
                     </div>
                   </div>
                   

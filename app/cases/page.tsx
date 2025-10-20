@@ -210,7 +210,7 @@ export default function NotableCases() {
               <div className="text-gray-600">Landmark Cases</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">15</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">50+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
           </div>

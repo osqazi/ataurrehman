@@ -45,7 +45,7 @@ export default function Header() {
               Notable Cases
             </Link>
             <Link
-              href="/cases"
+              href="/publications"
               className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
               Publications
@@ -105,6 +105,12 @@ export default function Header() {
                 className="text-gray-700 hover:text-primary-600 font-medium"
               >
                 Notable Cases
+              </Link>
+              <Link
+                href="/publications"
+                className="text-gray-700 hover:text-primary-600 font-medium"
+              >
+                Publications
               </Link>
               <Link
                 href="/shc-cases"
