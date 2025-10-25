@@ -1,81 +1,7 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import TeamCard from '@/app/components/TeamCard';
- 
-const teamMembers = [
-  {
-    name: "Justice (Retd.) Ata-ur-Rehman Khan",
-    position: "Founder",
-    bio: "Former Justice with over 35 years of distinguished service in the judiciary. Brings unparalleled expertise in constitutional law and civil litigation. Known for landmark judgments and legal scholarship. Former Senior Puisne Judge of the High Court of Sindh at Karachi, elevated to the bench on 27.05.1998 and retired on 17.07.2005. Author of numerous landmark judgments that are highly revered and cited. Now practices as an Arbitrator, Commissioner and Umpire.",
-    email: "justice.ata@arclaws.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["Constitutional Law", "Civil Litigation", "Judicial Review", "Legal Scholarship", "Arbitration"]
-  },
-  {
-    name: "Obaid-ur-Rahman Khan",
-    position: "Principal Litigator - Founder",
-    bio: "Practicing advocate of the High Courts and the Hon'ble Supreme Court of Pakistan with over 10 years of experience. Actively involved in dealing with all High Court matters alongside District Court matters, including cases in the National Accountability Courts, Banking Courts and other Special Courts and tribunals. Published author of dissertation titled 'International Law, Hostile Non-State Entities, The Scope of the Principle of Self Defence and Pakistan'. LL.B. from Hamdard School of Law (Gold Medalist), Masters of Law from London School of Economics and Political Science. Completed pupilage from chambers of Mr. Khalid Anwer, Senior Advocate Supreme Court.",
-    email: "obaid@arclaws.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["Corporate Law", "Commercial Litigation", "Supreme Court Practice", "Banking Law", "Constitutional Petitions"]
-  },
-  {
-    name: "Munawar Ali Bhaagat",
-    position: "Associate Partner",
-    bio: "Practicing advocate of the High Courts of Pakistan. Joined Ata-ur-Rahman & Co. in January 2018. Completed pupilage at the chambers of leading criminal lawyer Mr. M A Kazi. Responsible for criminal trials at the firm with rich criminal litigation experience, while also providing invaluable assistance to civil practice in complex cases. Bachelor's in English Literature from Karachi University and LL.B. from Hamdard School of Law, Hamdard University.",
-    email: "munawar@arclaws.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["Criminal Defense", "Criminal Trials", "Family Law", "Civil Litigation", "Bail Applications"]
-  },
-  {
-    name: "Noor Z. Khattak",
-    position: "Associate",
-    bio: "Practicing Advocate of the High Courts of Pakistan with more than 10 years of experience. Handles all District Court cases on behalf of the firm. Exceptional litigator with special expertise in cross-examinations. Known for meticulous case preparation and successful outcomes in complex district-level matters.",
-    email: "nzkhattak20@gmail.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["District Court Practice", "Cross-Examinations", "Civil Litigation", "Criminal Defense", "Trial Practice"]
-  },
-  {
-    name: "Muhammad Rehman",
-    position: "Associate",
-    bio: "Advocate of the High Courts who assists in matters both at the District Court level and the superior Courts. Provides comprehensive support in case preparation, legal research, and client representation across various practice areas.",
-    email: "rehman@arclaws.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["Civil Law", "District Court Practice", "Legal Research", "Case Preparation", "Client Representation"]
-  },
-  {
-    name: "Mudassir Abbasi",
-    position: "Senior Associate",
-    bio: "Advocate of the High Courts of Pakistan known for navigating the legal landscape with precision, insight, and unshakable resolve. Committed to the pursuit of justice and rigorous defense of clients' rights. Diploma in Law from University of London (2014), LL.B. (Hons) from University of London. Completed Legal Practice Course (LPC) and LL.M. from University of Law, Manchester, specializing in Commercial Law, Banking & Debt Finance, Public Companies Law, and Mergers & Acquisitions. Served as paralegal at Law Lane Solicitors in London. Since returning to Pakistan in 2018, has become indispensable in the firm's litigation practice, advising on complex service and employment disputes, constitutional petitions, banking litigation, and criminal defense. Assists Principal Litigator in strategic High Court matters.",
-    email: "mudassir47@arclaws.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["Commercial Law", "Banking & Finance", "Mergers & Acquisitions", "Constitutional Law", "Employment Law", "Criminal Defense"]
-  },
-  {
-    name: "Sabih Ahmed Zubairi",
-    position: "Senior Associate",
-    bio: "Practicing advocate of the High Courts of Pakistan. Joined Ata-ur-Rahman & Co. in December 2018. LL.B. (Hons) from University of London. Gained vast in-house legal experience at K-Electric as Associate Legal Affairs. LL.M. from University of Law, Bristol, focusing on Comparative Constitutional Law, Equity and Debt Finance, Taxation and Commercial Law. Post Graduate Diploma in Legal Practice from University of Law, Bristol. Completed pupilage from chambers of Mr. Makhdoom Ali Khan, Senior Advocate Supreme Court and former Attorney General of Pakistan. Previously associated with chambers of Mr. Muhammad Farogh Naseem, Senior Advocate Supreme Court and Federal Minister for Law and Justice. Extensive local and international internships at leading law firms including Haidermota & Co., Mohsin Tayebaly & Co., Orr, Dignam & Co., MCAS&W Law Associates, Norton Rose Fulbright (Dubai) and Al-Masa Advocates and Legal Consultants (Dubai). Practice includes commercial, civil, constitutional, criminal and service matters. Reported case cited as SBLR 2020 Sindh 1677.",
-    email: "saz@arclaws.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["Commercial Law", "Constitutional Law", "Corporate Law", "Civil Litigation", "Service Matters", "International Law"]
-  },
-  {
-    name: "Saleem Raza Jakhar",
-    position: "Associate",
-    bio: "Advocate of the High Court of Pakistan regularly appearing before both District Courts and Superior Courts. Commenced legal career in 2006 with invaluable experience in the legal fraternity. LL.B. from Shah Abdul Latif University, Khairpur (Mirs). Completed initial legal training (pupillage) under mentorship of Justice (R) Aftab Ahmed Gorar. Subsequently joined chambers of Mr. Muhammad Ashraff Kazi, Senior Advocate of the Supreme Court of Pakistan, gaining experience in complex legal matters. Joined Ata-ur-Rahman & Co. in October 2023, contributing expertise and dedication to the firm's litigation practice. Areas of practice encompass civil, constitutional, criminal, and service law matters.",
-    email: "srj@arclaws.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["Civil Law", "Constitutional Law", "Criminal Law", "Service Matters", "District Court Practice"]
-  },
-  {
-    name: "Bahadur Jahangir Khoso",
-    position: "Associate",
-    bio: "Practicing Advocate of the High Courts of Pakistan. Bachelor of Laws from University of London, called to the Bar of England and Wales in 2023 through Lincoln's Inn Society. Regularly appears before High Courts, District Courts and Special Tribunals. Joined Ata-ur-Rahman & Co. in May 2024. Vital team member focusing on advocacy, research, drafting, rendering legal opinions and preparing case law briefs for the Principal Litigator. Expertise includes Civil, Commercial, Election and Constitutional contentious matters. Previously worked as associate with Rizvi and Bukhari Associates, assisting senior partners in cases before High Court of Sindh pertaining to constitutional matters, criminal, property and white collar crimes.",
-    email: "bahadur.khoso@arclaws.com",
-    phone: "+92-XXX-XXXXXXX",
-    expertise: ["Civil Law", "Commercial Law", "Election Law", "Constitutional Law", "Legal Research", "Drafting"]
-  }
-];
+import teamData from '@/app/data/teamMembers.json';
 
 export default function Team() {
   return (
@@ -98,7 +24,7 @@ export default function Team() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {teamMembers.map((member, index) => (
+            {teamData.teamMembers.map((member, index) => (
               <TeamCard key={index} member={member} />
             ))}
           </div>

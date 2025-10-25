@@ -68,7 +68,7 @@ export default function AnimatedDoor() {
           Ata-ur-Rehman & Co.
         </h1>
         <p className="text-amber-200 text-2xl">
-          Premier Legal Services
+          Advocates | Legal Consultants
         </p>
       </div>
 

@@ -150,7 +150,7 @@
 //           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 //             <div>
 //               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-//                 Why Choose Ata-ur-Rehman & Co.?
+//                 Why Choose Ata-ur-Rahman & Co.?
 //               </h2>
 //               <div className="space-y-4">
 //                 <div className="flex items-start space-x-4">
@@ -260,21 +260,21 @@ const officeSections = [
     id: 1,
     image: "/office1.png",
     title: "Our Legacy",
-    content: "The practice was established in 1972 in Karachi by Justice (Retd.) Ata-ur-Rehman under whose able guidance it blossomed into one of the most reputable chambers in the city. With over 50 years of excellence, we continue to uphold the highest standards of legal practice.",
+    content: "The practice was established in 1972 in Karachi by Justice (Retd.) Ata-ur-Rahman under whose able guidance it blossomed into one of the most reputable chambers in the city. With over 50 years of excellence, we continue to uphold the highest standards of legal practice.",
     icon: <Award className="h-6 w-6" />
   },
   {
     id: 2,
     image: "/office2.png",
     title: "Expert Leadership",
-    content: "Justice (Retd.) Ata-ur-Rehman, remained an advocate of the High Court and an Advocate of the Supreme Court of Pakistan, after which he was elevated to the bench on 27.05.1998, till his retirement on 17.07.2005 as a Senior Puisne Judge of the High Court of Sindh at Karachi.",
+    content: "Justice (Retd.) Ata-ur-Rahman, remained an advocate of the High Court and an Advocate of the Supreme Court of Pakistan, after which he was elevated to the bench on 27.05.1998, till his retirement on 17.07.2005 as a Senior Puisne Judge of the High Court of Sindh at Karachi.",
     icon: <UserCheck className="h-6 w-6" />
   },
   {
     id: 3,
     image: "/office3.png",
     title: "Modern Practice",
-    content: "Mr. Obaid-ur-Rehman Khan, is an enrolled advocate of the Hon'ble Supreme Court of Pakistan. He has done his bachelors in English Literature from University of Karachi, after which he graduated with his LL.B. from Hamdard School of Law, Hamdard University with two gold medals.",
+    content: "Mr. Obaid-ur-Rahman Khan, is an enrolled advocate of the Hon'ble Supreme Court of Pakistan. He has done his bachelors in English Literature from University of Karachi, after which he graduated with his LL.B. from Hamdard School of Law, Hamdard University with two gold medals.",
     icon: <BookOpen className="h-6 w-6" />
   },
   {
@@ -451,7 +451,7 @@ export default function Home() {
         <div className="container-custom section-padding relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Justice. Integrity. Excellence.
+              SERVICE WITH INTEGRITY
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white">
               Premier legal services with over 50 years of trusted expertise
@@ -479,11 +479,11 @@ export default function Home() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              About Ata-ur-Rehman & Co.
+              About Ata-ur-Rahman & Co.
             </h2>
             <div className="w-24 h-1 bg-primary-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Ata-ur-Rehman & Co. is a chamber with a robust commercial, corporate, 
+              Ata-ur-Rahman & Co. is a chamber with a robust commercial, corporate, 
               civil and criminal litigation practice. We provide comprehensive legal 
               services to Pakistan's leading industrial and commercial groups, 
               handling matters across all levels of judiciary with unparalleled expertise.
@@ -554,7 +554,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose Ata-ur-Rehman & Co.?
+                Why Choose Ata-ur-Rahman & Co.?
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
