@@ -48,7 +48,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Ata-ur-Rahman & Co. Advocates - Premier Law Firm",
+  title: "Ata-ur-Rahman & Co.  - Legal Consultants & Advocates",
   description: "Leading legal services in Corporate Advisory, Litigation, Criminal Defense, and more.",
 };
 

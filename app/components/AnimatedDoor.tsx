@@ -65,7 +65,7 @@ export default function AnimatedDoor() {
         }`}
       >
         <h1 className="text-5xl font-bold text-white mb-4 font-serif">
-          Ata-ur-Rehman & Co.
+          Ata-ur-Rahman & Co.
         </h1>
         <p className="text-amber-200 text-2xl">
           Advocates | Legal Consultants
