@@ -53,7 +53,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@ataurrehmanlaw.com</span>
+                <span>info@arclaws.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 Ata-ur-Rehman & Co. All rights reserved.</p>
+          <p>&copy; 2024 Ata-ur-Rahman & Co. All rights reserved.</p>
           <p>Deveoloped by: MetaLog Inc. &copy; - </p>
         </div>
       </div>

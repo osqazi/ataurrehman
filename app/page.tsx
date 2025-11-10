@@ -301,29 +301,12 @@ const officeSections = [
 ];
 
 const services = [
-  {
-    icon: <Briefcase className="h-8 w-8" />,
-    title: "Corporate Advisory",
-    description:
-      "Expert guidance on corporate governance, compliance, and business transactions.",
-  },
+  
   {
     icon: <Scale className="h-8 w-8" />,
     title: "Litigation & Dispute Resolution",
     description:
       "Comprehensive legal representation in civil and commercial disputes.",
-  },
-  {
-    icon: <Shield className="h-8 w-8" />,
-    title: "Criminal Defense",
-    description:
-      "Aggressive defense strategies to protect your rights and freedom.",
-  },
-  {
-    icon: <Heart className="h-8 w-8" />,
-    title: "Family Law & Divorce",
-    description:
-      "Compassionate legal support for family matters and divorce proceedings.",
   },
   {
     icon: <HomeIcon className="h-8 w-8" />,
@@ -332,23 +315,29 @@ const services = [
       "Expert handling of property transactions, disputes, and real estate law.",
   },
   {
-    icon: <Award className="h-8 w-8" />,
-    title: "Intellectual Property",
+    icon: <Shield className="h-8 w-8" />,
+    title: "Criminal Defense",
     description:
-      "Protection and enforcement of your intellectual property rights.",
+      "Aggressive defense strategies to protect your rights and freedom.",
   },
   {
     icon: <Users className="h-8 w-8" />,
-    title: "Employment Law",
+    title: "Employment and Service Laws",
     description:
       "Legal advice on employment contracts, disputes, and labor laws.",
   },
   {
     icon: <Building className="h-8 w-8" />,
-    title: "Arbitrator",
+    title: "Service as Arbitration",
     description:
       "Neutral arbitration services for efficient dispute resolution.",
   },
+  {
+    icon: <Heart className="h-8 w-8" />,
+    title: "Family Law & Divorce",
+    description:
+      "Compassionate legal support for family matters and divorce proceedings.",
+  },  
 ];
 
 // Alternating Section Component

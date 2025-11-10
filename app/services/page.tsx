@@ -5,18 +5,6 @@ import { Briefcase, Scale, Shield, Heart, Home, Award, Users, Building } from 'l
 
 const allServices = [
   {
-    icon: <Briefcase className="h-8 w-8" />,
-    title: "Corporate Advisory",
-    description: "Expert guidance on corporate governance, compliance, M&A, joint ventures, and business transactions. We help businesses navigate complex legal landscapes.",
-    details: [
-      "Corporate Governance & Compliance",
-      "Mergers & Acquisitions",
-      "Joint Ventures & Partnerships",
-      "Contract Drafting & Review",
-      "Regulatory Compliance"
-    ]
-  },
-  {
     icon: <Scale className="h-8 w-8" />,
     title: "Litigation & Dispute Resolution",
     description: "Comprehensive legal representation in civil, commercial, and constitutional disputes with proven success in high-stakes litigation.",
@@ -24,8 +12,24 @@ const allServices = [
       "Civil Litigation",
       "Commercial Disputes",
       "Constitutional Petitions",
-      "Appellate Practice",
-      "Alternative Dispute Resolution"
+      "Election Disputes",
+      "Alternative Dispute Resolution",
+      "Rent Laws",
+      "Shipping and Admirality Disputes"
+    ]
+  },
+  
+  {
+    icon: <Home className="h-8 w-8" />,
+    title: "Real Estate & Property",
+    description: "Expert handling of property transactions, title verification, development agreements, and real estate disputes.",
+    details: [
+      "Property Transactions",
+      "Title Verification",
+      "Development Agreements",
+      "Property Disputes",
+      "Land Acquisition",
+      "Registration of Title and ancillary documents"
     ]
   },
   {
@@ -37,52 +41,17 @@ const allServices = [
       "Trial Defense",
       "Appellate Defense",
       "White Collar Crimes",
-      "Criminal Appeals"
+      "Criminal Appeals",
+      
     ]
   },
-  {
-    icon: <Heart className="h-8 w-8" />,
-    title: "Family Law & Divorce",
-    description: "Compassionate legal support for family matters including divorce, child custody, maintenance, and inheritance disputes.",
-    details: [
-      "Divorce Proceedings",
-      "Child Custody & Guardianship",
-      "Maintenance & Alimony",
-      "Inheritance Disputes",
-      "Family Settlement Agreements"
-    ]
-  },
-  {
-    icon: <Home className="h-8 w-8" />,
-    title: "Real Estate & Property",
-    description: "Expert handling of property transactions, title verification, development agreements, and real estate disputes.",
-    details: [
-      "Property Transactions",
-      "Title Verification",
-      "Development Agreements",
-      "Property Disputes",
-      "Land Acquisition"
-    ]
-  },
-  {
-    icon: <Award className="h-8 w-8" />,
-    title: "Intellectual Property",
-    description: "Comprehensive protection and enforcement of trademarks, copyrights, patents, and trade secrets.",
-    details: [
-      "Trademark Registration",
-      "Copyright Protection",
-      "Patent Law",
-      "IP Litigation",
-      "Brand Protection"
-    ]
-  },
-  {
+   {
     icon: <Users className="h-8 w-8" />,
-    title: "Employment Law",
+    title: "Employment and Service Law",
     description: "Legal advice on employment contracts, labor disputes, termination issues, and workplace policies.",
     details: [
       "Employment Contracts",
-      "Labor Disputes",
+      "Labour Disputes",
       "Termination Issues",
       "Workplace Policies",
       "Employee Rights"
@@ -90,16 +59,31 @@ const allServices = [
   },
   {
     icon: <Building className="h-8 w-8" />,
-    title: "Arbitrator",
+    title: "Service as Arbitrator",
     description: "Neutral arbitration services for efficient and confidential dispute resolution outside traditional court systems.",
     details: [
       "Commercial Arbitration",
       "Construction Disputes",
       "Partnership Disputes",
-      "Contract Arbitration",
-      "International Arbitration"
+      "Contract Arbitration"
     ]
-  }
+  },
+  {
+    icon: <Heart className="h-8 w-8" />,
+    title: "Family Disputes",
+    description: "Compassionate legal support for family matters including divorce, child custody, maintenance, and inheritance disputes.",
+    details: [
+      "Divorce Proceedings",
+      "Child Custody & Guardianship",
+      "Maintenance & Alimony",
+      "Inheritance Disputes",
+      "Family Settlement Agreements",
+      "Administration of Estate and Successsion",
+      "Restitution of Conjugal Rights"
+    ]
+  },
+   
+  
 ];
 
 export default function Services() {
