@@ -198,3 +198,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-playfair), serif;
+}
+body, p, span, a {
+  font-family: var(--font-inter), sans-serif;
+}
+
