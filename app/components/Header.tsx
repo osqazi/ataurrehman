@@ -3,6 +3,15 @@ import { useState } from "react";
 import Link from "next/link";
 import { Scale, Menu, X } from "lucide-react";
 
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic']
+});
+
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -10,14 +19,19 @@ export default function Header() {
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="container-custom">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Scale className="h-8 w-8 text-primary-600" />
-            <span className="text-xl font-bold text-gray-900">
-              Ata-ur-Rahman & Co. Advocates
-            </span>
-          </Link>
-
+         {/* Logo */}
+<Link href="/" className="flex items-center space-x-3">
+  <Scale className="h-12 w-12 text-primary-700" />
+  <div className="flex flex-col">
+    <span className={`${playfair.className} text-2xl font-semibold text-gray-900 italic tracking-tight`}>
+      <span className="text-4xl text-primary-700 font-bold italic mr-0.5">A</span>
+      ta-ur-Rahman & Co.
+    </span> 
+    <span className={`${playfair.className} text-lg font-light text-gray-600 italic tracking-wide mt-1`}>
+      Legal Consultants and Advocates
+    </span>
+  </div>
+</Link>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <Link
