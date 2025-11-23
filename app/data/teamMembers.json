@@ -1,281 +1,297 @@
 {
-  "teamMembers": [
-    {
-      "id": "justice-ata-ur-rahman-khan",
-      "name": "Justice (Retd.) Ata-ur-Rahman Khan",
-      "position": "Founder",
-      "bio": "Former Justice with over 35 years of distinguished service in the judiciary. Brings unparalleled expertise in constitutional law and civil litigation. Known for landmark judgments and legal scholarship. Former Senior Puisne Judge of the High Court of Sindh at Karachi, elevated to the bench on 27.05.1998 and retired on 17.07.2005. Author of numerous landmark judgments that are highly revered and cited. Now practices as an Arbitrator, Commissioner and Umpire.",
-      "email": "justice.ata@arclaws.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["Constitutional Law", "Civil Litigation", "Judicial Review", "Legal Scholarship", "Arbitration"],
-      "profile": {
-        "education": [
-          "LL.B. from University of Punjab",
-          "Bar-at-Law from Lincoln's Inn, London",
-          "Advanced Judicial Training Program"
-        ],
-        "experience": [
-          "Former Senior Puisne Judge of the High Court of Sindh at Karachi (1998-2005)",
-          "35+ years of distinguished service in judiciary",
-          "Author of numerous landmark judgments",
-          "Currently practicing as Arbitrator, Commissioner and Umpire"
-        ],
-        "memberships": [
-          "Pakistan Bar Council",
-          "Sindh Bar Council",
-          "International Bar Association"
-        ],
-        "appointments": [
-          "Elevated to the bench on 27.05.1998",
-          "Retired on 17.07.2005",
-          "Senior Puisne Judge of Sindh High Court"
-        ]
-      }
-    },
-    {
-      "id": "obaid-ur-rahman-khan",
-      "name": "Obaid-ur-Rahman Khan",
-      "position": "Principal Litigator - Advocate of the Supreme Court of Pakistan",
-      "bio": "Practicing advocate of the High Courts and the Hon'ble Supreme Court of Pakistan with over 10 years of experience. Actively involved in dealing with all High Court matters alongside District Court matters, including cases in the National Accountability Courts, Banking Courts and other Special Courts and tribunals. Published author of dissertation titled 'International Law, Hostile Non-State Entities, The Scope of the Principle of Self Defence and Pakistan'. LL.B. from Hamdard School of Law (Gold Medalist), Masters of Law from London School of Economics and Political Science. Completed pupilage from chambers of Mr. Khalid Anwer, Senior Advocate Supreme Court.",
-      "email": "obaid@arclaws.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["Corporate Law", "Commercial Litigation", "Supreme Court Practice", "Banking Law", "Constitutional Petitions"],
-      "profile": {
-        "education": [
-          "LL.B. from Hamdard School of Law (Gold Medalist)",
-          "Masters of Law from London School of Economics and Political Science",
-          "Advanced Advocacy Training"
-        ],
-        "experience": [
-          "Completed pupilage from chambers of Mr. Khalid Anwer, Senior Advocate Supreme Court",
-          "10+ years of practice in High Courts and Supreme Court",
-          "Specialization in constitutional petitions and commercial litigation",
-          "Principal Litigator at Ata-ur-Rahman & Co."
-        ],
-        "memberships": [
-          "Supreme Court Bar Association",
-          "Sindh High Court Bar Association",
-          "Pakistan Bar Council"
-        ],
-        "appointments": [
-          "Advocate Supreme Court of Pakistan",
-          "Principal Litigator at Ata-ur-Rahman & Co."
-        ]
-      }
-    },
-    {
-      "id": "munawar-ali-bhaagat",
-      "name": "Munawar Ali Bhaagat",
-      "position": "Advocate High Court",
-      "bio": "Practicing advocate of the High Courts of Pakistan. Joined Ata-ur-Rahman & Co. in January 2018. Completed pupilage at the chambers of leading criminal lawyer Mr. M A Kazi. Responsible for criminal trials at the firm with rich criminal litigation experience, while also providing invaluable assistance to civil practice in complex cases. Bachelor's in English Literature from Karachi University and LL.B. from Hamdard School of Law, Hamdard University.",
-      "email": "munawar@arclaws.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["Criminal Defense", "Criminal Trials", "Family Law", "Civil Litigation", "Bail Applications"],
-      "profile": {
-        "education": [
-          "Bachelor's in English Literature from Karachi University",
-          "LL.B. from Hamdard School of Law, Hamdard University"
-        ],
-        "experience": [
-          "Completed pupilage at chambers of Mr. M A Kazi, leading criminal lawyer",
-          "Joined Ata-ur-Rahman & Co. in January 2018",
-          "Specialized in criminal trials and civil litigation",
-          "Rich experience in criminal defense and bail applications"
-        ],
-        "memberships": [
-          "Sindh High Court Bar Association",
-          "Karachi Bar Association"
-        ],
-        "appointments": [
-          "Advocate High Court",
-          "Criminal Law Specialist at Ata-ur-Rahman & Co."
-        ]
-      }
-    },
-    {
-      "id": "noor-z-khattak",
-      "name": "Noor Z. Khattak",
-      "position": "Advocate High Court",
-      "bio": "Practicing Advocate of the High Courts of Pakistan with more than 10 years of experience. Handles all District Court cases on behalf of the firm. Exceptional litigator with special expertise in cross-examinations. Known for meticulous case preparation and successful outcomes in complex district-level matters.",
-      "email": "nzkhattak20@gmail.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["District Court Practice", "Cross-Examinations", "Civil Litigation", "Criminal Defense", "Trial Practice"],
-      "profile": {
-        "education": [
-          "LL.B. from recognized Pakistani University",
-          "Advanced Trial Advocacy Training"
-        ],
-        "experience": [
-          "10+ years of experience in District Court practice",
-          "Special expertise in cross-examinations",
-          "Handles complex district-level matters",
-          "Expert in trial practice and litigation"
-        ],
-        "memberships": [
-          "District Courts Bar Association",
-          "Sindh High Court Bar Association"
-        ],
-        "appointments": [
-          "Advocate High Court",
-          "District Court Practice Specialist"
-        ]
-      }
-    },
-    {
-      "id": "muhammad-rehman",
-      "name": "Muhammad Rehman",
-      "position": "Advocate High Court",
-      "bio": "Advocate of the High Courts who assists in matters both at the District Court level and the superior Courts. Provides comprehensive support in case preparation, legal research, and client representation across various practice areas.",
-      "email": "rehman@arclaws.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["Civil Law", "District Court Practice", "Legal Research", "Case Preparation", "Client Representation"],
-      "profile": {
-        "education": [
-          "LL.B. from recognized Pakistani University",
-          "Legal Research and Writing Certification"
-        ],
-        "experience": [
-          "Assists in District Court and superior Court matters",
-          "Expert in case preparation and legal research",
-          "Provides comprehensive client representation",
-          "Supports complex litigation across practice areas"
-        ],
-        "memberships": [
-          "Sindh High Court Bar Association",
-          "District Courts Bar Association"
-        ],
-        "appointments": [
-          "Advocate High Court",
-          "Legal Research and Case Preparation Specialist"
-        ]
-      }
-    },
-    {
-      "id": "mudassir-abbasi",
-      "name": "Mudassir Abbasi",
-      "position": "Advocate High Court",
-      "bio": "Advocate of the High Courts of Pakistan known for navigating the legal landscape with precision, insight, and unshakable resolve. Committed to the pursuit of justice and rigorous defense of clients' rights. Diploma in Law from University of London (2014), LL.B. (Hons) from University of London. Completed Legal Practice Course (LPC) and LL.M. from University of Law, Manchester, specializing in Commercial Law, Banking & Debt Finance, Public Companies Law, and Mergers & Acquisitions. Served as paralegal at Law Lane Solicitors in London. Since returning to Pakistan in 2018, has become indispensable in the firm's litigation practice, advising on complex service and employment disputes, constitutional petitions, banking litigation, and criminal defense. Assists Principal Litigator in strategic High Court matters.",
-      "email": "mudassir47@arclaws.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["Commercial Law", "Banking & Finance", "Mergers & Acquisitions", "Constitutional Law", "Employment Law", "Criminal Defense"],
-      "profile": {
-        "education": [
-          "Diploma in Law from University of London (2014)",
-          "LL.B. (Hons) from University of London",
-          "Legal Practice Course (LPC) from University of Law, Manchester",
-          "LL.M. from University of Law, Manchester"
-        ],
-        "experience": [
-          "Served as paralegal at Law Lane Solicitors in London",
-          "Joined Ata-ur-Rahman & Co. in 2018",
-          "Specializes in commercial law and banking litigation",
-          "Advises on complex service and employment disputes",
-          "Assists Principal Litigator in strategic High Court matters"
-        ],
-        "memberships": [
-          "Sindh High Court Bar Association",
-          "Commercial Law Association",
-          "International Bar Association"
-        ],
-        "appointments": [
-          "Advocate High Court",
-          "Commercial Law Specialist"
-        ]
-      }
-    },
-    {
-      "id": "sabih-ahmed-zubairi",
-      "name": "Sabih Ahmed Zubairi",
-      "position": "Advocate High Court",
-      "bio": "Practicing advocate of the High Courts of Pakistan. Joined Ata-ur-Rahman & Co. in December 2018. LL.B. (Hons) from University of London. Gained vast in-house legal experience at K-Electric as Associate Legal Affairs. LL.M. from University of Law, Bristol, focusing on Comparative Constitutional Law, Equity and Debt Finance, Taxation and Commercial Law. Post Graduate Diploma in Legal Practice from University of Law, Bristol. Completed pupilage from chambers of Mr. Makhdoom Ali Khan, Senior Advocate Supreme Court and former Attorney General of Pakistan. Previously associated with chambers of Mr. Muhammad Farogh Naseem, Senior Advocate Supreme Court and Federal Minister for Law and Justice. Extensive local and international internships at leading law firms including Haidermota & Co., Mohsin Tayebaly & Co., Orr, Dignam & Co., MCAS&W Law Associates, Norton Rose Fulbright (Dubai) and Al-Masa Advocates and Legal Consultants (Dubai). Practice includes commercial, civil, constitutional, criminal and service matters. Reported case cited as SBLR 2020 Sindh 1677.",
-      "email": "saz@arclaws.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["Commercial Law", "Constitutional Law", "Corporate Law", "Civil Litigation", "Service Matters", "International Law"],
-      "profile": {
-        "education": [
-          "LL.B. (Hons) from University of London",
-          "LL.M. from University of Law, Bristol",
-          "Post Graduate Diploma in Legal Practice from University of Law, Bristol"
-        ],
-        "experience": [
-          "Gained in-house legal experience at K-Electric as Associate Legal Affairs",
-          "Completed pupilage from chambers of Mr. Makhdoom Ali Khan",
-          "Previously associated with chambers of Mr. Muhammad Farogh Naseem",
-          "Extensive local and international internships at leading law firms",
-          "Joined Ata-ur-Rahman & Co. in December 2018"
-        ],
-        "memberships": [
-          "Sindh High Court Bar Association",
-          "International Law Association",
-          "Corporate Law Society"
-        ],
-        "appointments": [
-          "Advocate High Court",
-          "International and Corporate Law Specialist"
-        ]
-      }
-    },
-    {
-      "id": "saleem-raza-jakhar",
-      "name": "Saleem Raza Jakhar",
-      "position": "Advocate High Court",
-      "bio": "Advocate of the High Court of Pakistan regularly appearing before both District Courts and Superior Courts. Commenced legal career in 2006 with invaluable experience in the legal fraternity. LL.B. from Shah Abdul Latif University, Khairpur (Mirs). Completed initial legal training (pupillage) under mentorship of Justice (R) Aftab Ahmed Gorar. Subsequently joined chambers of Mr. Muhammad Ashraff Kazi, Senior Advocate of the Supreme Court of Pakistan, gaining experience in complex legal matters. Joined Ata-ur-Rahman & Co. in October 2023, contributing expertise and dedication to the firm's litigation practice. Areas of practice encompass civil, constitutional, criminal, and service law matters.",
-      "email": "srj@arclaws.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["Civil Law", "Constitutional Law", "Criminal Law", "Service Matters", "District Court Practice"],
-      "profile": {
-        "education": [
-          "LL.B. from Shah Abdul Latif University, Khairpur (Mirs)"
-        ],
-        "experience": [
-          "Commenced legal career in 2006",
-          "Completed pupillage under Justice (R) Aftab Ahmed Gorar",
-          "Joined chambers of Mr. Muhammad Ashraff Kazi",
-          "Joined Ata-ur-Rahman & Co. in October 2023",
-          "Extensive experience in civil, constitutional, and criminal matters"
-        ],
-        "memberships": [
-          "Sindh High Court Bar Association",
-          "District Courts Bar Association",
-          "Service Law Association"
-        ],
-        "appointments": [
-          "Advocate High Court",
-          "Service Law and Constitutional Law Specialist"
-        ]
-      }
-    },
-    {
-      "id": "bahadur-jahangir-khoso",
-      "name": "Bahadur Jahangir Khoso",
-      "position": "Advocate High Court",
-      "bio": "Practicing Advocate of the High Courts of Pakistan. Bachelor of Laws from University of London, called to the Bar of England and Wales in 2023 through Lincoln's Inn Society. Regularly appears before High Courts, District Courts and Special Tribunals. Joined Ata-ur-Rahman & Co. in May 2024. Vital team member focusing on advocacy, research, drafting, rendering legal opinions and preparing case law briefs for the Principal Litigator. Expertise includes Civil, Commercial, Election and Constitutional contentious matters. Previously worked as associate with Rizvi and Bukhari Associates, assisting senior partners in cases before High Court of Sindh pertaining to constitutional matters, criminal, property and white collar crimes.",
-      "email": "bahadur.khoso@arclaws.com",
-      "phone": "+92-XXX-XXXXXXX",
-      "expertise": ["Civil Law", "Commercial Law", "Election Law", "Constitutional Law", "Legal Research", "Drafting"],
-      "profile": {
-        "education": [
-          "Bachelor of Laws from University of London",
-          "Called to the Bar of England and Wales in 2023 through Lincoln's Inn Society"
-        ],
-        "experience": [
-          "Previously worked as associate with Rizvi and Bukhari Associates",
-          "Joined Ata-ur-Rahman & Co. in May 2024",
-          "Specializes in advocacy, research, and drafting",
-          "Expert in constitutional and election law matters",
-          "Prepares case law briefs for Principal Litigator"
-        ],
-        "memberships": [
-          "Sindh High Court Bar Association",
-          "Lincoln's Inn Society",
-          "Bar of England and Wales"
-        ],
-        "appointments": [
-          "Advocate High Court",
-          "Called to the Bar of England and Wales",
-          "Legal Research and Drafting Specialist"
-        ]
-      }
+  "teamMembers": 
+  [
+  {
+    "id": "justice-ata-ur-rahman",
+    "name": "Justice (Retd.) Ata-ur-Rahman",
+    "position": "Founder / Arbitrator",
+    "bio": "Established the chamber in 1972. Remained an advocate of the High Court and Supreme Court of Pakistan. Served as a Senior Puisne Judge of the High Court of Sindh at Karachi. Involved as an advocate in landmark cases and is the author of numerous judgments. Currently practices as an Arbitrator, Commissioner, and Umpire.",
+    "email": "",
+    "phone": "Not specified",
+    "expertise": [
+      "Arbitration",
+      "Commissionership",
+      "Umpire",
+      "Litigation (Advocate of High Court and Supreme Court)"
+    ],
+    "profile": {
+      "education": [
+        "Advocate of the High Court",
+        "Advocate of the Supreme Court of Pakistan"
+      ],
+      "experience": [
+        "Established Ata-ur-Rahman & Co. in 1972",
+        "Elevated to the bench on 27.05.1998",
+        "Retired on 17.07.2005 as a Senior Puisne Judge of the High Court of Sindh at Karachi",
+        "Practices as an Arbitrator, Commissioner, and Umpire"
+      ],
+      "memberships": [],
+      "appointments": [
+        "Practice established: 1972",
+        "Elevated to the bench: 27.05.1998",
+        "Retired: 17.07.2005"
+      ]
     }
-  ]
+  },
+  {
+    "id": "obaid-ur-rahman-khan",
+    "name": "Obaid-ur-Rahman Khan",
+    "position": "Principal Litigator",
+    "bio": "Practicing advocate of the High Courts and Supreme Court of Pakistan. Has over 15 years of experience. Given the reins of the practice in 2009. Deals with matters in the Supreme Court, High Courts, District Courts, National Accountability Courts, Banking Courts, and Special Courts.",
+    "email": "obaid@arclaws.com",
+    "phone": "+92-300-2798986",
+    "expertise": [
+      "Commercial Litigation",
+      "Corporate Litigation",
+      "Civil Litigation",
+      "Criminal Litigation",
+      "Constitutional Matters"
+    ],
+    "profile": {
+      "education": [
+        "Bachelors in English Literature from University of Karachi",
+        "LL.B. from Hamdard School of Law, Hamdard University (with two gold medals)",
+        "Masters of Law (LL.M.) from the London School of Economics and Political Science"
+      ],
+      "experience": [
+        "Principal Litigator at Ata-ur-Rahman & Co.",
+        "Given the reins of the practice in 2009",
+        "Pupilage completed from the chambers of Mr. Khalid Anwer",
+        "Published dissertation on ‘International Law, Hostile Non-State Entities, The Scope of the Principle of Self Defense and Pakistan’"
+      ],
+      "memberships": [
+        "Enrolled advocate of the Supreme Court of Pakistan",
+        "Practicing advocate of the High Courts"
+      ],
+      "appointments": [
+        "Given the reins of the practice: 2009"
+      ]
+    }
+  },
+  {
+    "id": "munawar-ali-bhaagat",
+    "name": "Munawar Ali Bhaagat",
+    "position": "Advocate",
+    "bio": "Practicing advocate of the High Courts of Pakistan. Joined the chambers of Ata-ur-Rahman & Co. in January 2018. Responsible for criminal trials at the firm. Also provides assistance to the civil practice.",
+    "email": "munawar@arclaws.com",
+    "phone": "0333-3907324",
+    "expertise": [
+      "Criminal Trials",
+      "Criminal Litigation",
+      "Civil Practice Assistance"
+    ],
+    "profile": {
+      "education": [
+        "Bachelors in English literature from Karachi University",
+        "LL.B. from Hamdard School of Law, Hamdard University"
+      ],
+      "experience": [
+        "Completed pupilage at the chambers of Mr. M A Kazi",
+        "Responsible for criminal trials at the firm",
+        "Joined Ata-ur-Rahman & Co. in January 2018"
+      ],
+      "memberships": [
+        "Practicing advocate of the High Courts of Pakistan"
+      ],
+      "appointments": [
+        "Joined the chambers: January 2018"
+      ]
+    }
+  },
+  {
+    "id": "noor-z-khattak",
+    "name": "Noor Z. Khattak",
+    "position": "Associate",
+    "bio": "Practicing Advocate of the High Courts of Pakistan. Has more than 10 years of experience. Deals with all the District Court cases on behalf of the firm. Has expertise in the area of cross-examinations.",
+    "email": "nzkhattak20@gmail.com",
+    "phone": "",
+    "expertise": [
+      "District Court Cases",
+      "Cross-Examinations",
+      "Litigation (Advocate of High Courts)"
+    ],
+    "profile": {
+      "education": [
+        "B.A L.L.B"
+      ],
+      "experience": [
+        "Associate at Ata-ur-Rahman & Co.",
+        "Deals with all District Court cases",
+        "Has more than 10 years of experience"
+      ],
+      "memberships": [
+        "Practicing Advocate of the High Courts of Pakistan"
+      ],
+      "appointments": []
+    }
+  },
+  {
+    "id": "muhammad-rehman",
+    "name": "Muhammad Rehman",
+    "position": "Associate",
+    "bio": "Advocate of the High Courts. Assists in matters at the District Court level and the Superior Court.",
+    "email": "rehman@arclaws.com",
+    "phone": "Not specified",
+    "expertise": [
+      "District Court Matters",
+      "Superior Court Matters",
+      "Litigation (Advocate of High Courts)"
+    ],
+    "profile": {
+      "education": [
+        "B.A L.L.B from S.M Law College"
+      ],
+      "experience": [
+        "Associate at Ata-ur-Rahman & Co.",
+        "Assists in matters at the District Court level",
+        "Assists in matters at the Superior Court"
+      ],
+      "memberships": [
+        "Advocate of the High Courts"
+      ],
+      "appointments": []
+    }
+  },
+  {
+    "id": "mudassir-abbasi",
+    "name": "Mudassir Abbasi",
+    "position": "Advocate of the High Court / Associate",
+    "bio": "Advocate of the High Court. Assists in matters at the District Court and superior Court. Represents clients in Service/Employment Law, Banking and NAB matters. Completed a Legal Practice Course and LLM focusing on commercial and banking law in the UK.",
+    "email": "mudassir47@arclaws.com",
+    "phone": "0315-3081787",
+    "expertise": [
+      "Service/Employment Law",
+      "Banking Law",
+      "NAB (National Accountability Bureau) Matters",
+      "Commercial Law",
+      "Mergers and Acquisitions"
+    ],
+    "profile": {
+      "education": [
+        "Bachelor in Commerce (B.Com) from University of Sindh",
+        "Diploma in Law from the University of London (2014)",
+        "LL.B. (Hons) from the University of London",
+        "Legal Practice Course (LPC) from the University of Law, Manchester",
+        "LLM from the University of Law, Manchester (focus on Commercial Law, Banking and Debt Finance, Public Companies Law, Mergers and Acquisitions)"
+      ],
+      "experience": [
+        "Advocate of the High Court",
+        "Worked as a paralegal in Law Lane Solicitors, London",
+        "Assists with drafting and research for civil and criminal matters",
+        "Represents clients in Service/Employment Law, Banking and NAB matters",
+        "Joined the practice again: 2018"
+      ],
+      "memberships": [
+        "Advocate of the High Court"
+      ],
+      "appointments": [
+        "Diploma in Law: 2014",
+        "Joined the practice again: 2018"
+      ]
+    }
+  },
+  {
+    "id": "sabih-ahmed-zubairi",
+    "name": "Sabih Ahmed Zubairi",
+    "position": "Practicing Advocate / Associate",
+    "bio": "Practicing advocate of the High Courts of Pakistan. Joined the office in December 2018. Has in-house and corporate legal experience from a previous role and internships. His practice includes commercial, civil, constitutional, criminal, and service matters.",
+    "email": "saz@arclaws.com",
+    "phone": "0300-8979888",
+    "expertise": [
+      "Commercial Matters",
+      "Civil Matters",
+      "Constitutional Matters",
+      "Criminal Matters",
+      "Service Matters"
+    ],
+    "profile": {
+      "education": [
+        "LL.B. (Hons) from the University of London",
+        "Masters of Law (LL.M.) from the University of Law, Bristol (Focus on Comparative Constitutional Law, Equity and Debt Finance, Taxation and Commercial Law)",
+        "Post Graduate Diploma in Legal Practice from the University of Law, Bristol"
+      ],
+      "experience": [
+        "Joined Ata-ur-Rahman & Co. in December 2018",
+        "Associate legal affairs at KE",
+        "Completed pupilage from chambers of Mr. Makhdoom Ali Khan",
+        "Completed pupilage from chambers of Mr. Muhammad Farogh Naseem",
+        "Reported case cited as SBLR 2020 Sindh 1677"
+      ],
+      "memberships": [
+        "Practicing advocate of the High Courts of Pakistan"
+      ],
+      "appointments": [
+        "Joined Ata-ur-Rahman & Co.: December 2018"
+      ]
+    }
+  },
+  {
+    "id": "saleem-raza-jakhar",
+    "name": "Saleem Raza Jakhar",
+    "position": "Advocate of the High Court",
+    "bio": "Advocate of the High Court of Pakistan. Commenced his legal career in 2006. Regularly appears before District Courts and Superior Courts. Joined Ata-ur-Rahman & Co. in October 2023. Practice areas include civil, constitutional, criminal, and service law matters.",
+    "email": "srj@arclaws.com",
+    "phone": "0345-3905270",
+    "expertise": [
+      "Civil Law",
+      "Family Law",
+      "Criminal Law",
+      "Service Law Matters"
+    ],
+    "profile": {
+      "education": [
+        "LL.B. from Shah Abdul Latif University, Khairpur (Mirs)"
+      ],
+      "experience": [
+        "Commenced legal career in 2006",
+        "Joined Ata-ur-Rahman & Co. in October 2023",
+        "Initial legal training under Justice (R) Aftab Ahmed Gorar",
+        "Gained further experience in the chambers of Mr. Muhammad Ashraff Kazi"
+      ],
+      "memberships": [
+        "Advocate of the High Court of Pakistan"
+      ],
+      "appointments": [
+        "Commenced legal career: 2006",
+        "Joined Ata-ur-Rahman & Co.: October 2023"
+      ]
+    }
+  },
+  {
+    "id": "bahadur-jahangir-khoso",
+    "name": "Bahadur Jahangir Khoso",
+    "position": "Barrister / Practicing Advocate",
+    "bio": "Practicing Advocate of the High Courts of Pakistan. Called to the Bar of England and Wales in 2023. Joined the office in May 2024. Regularly appears before High Courts, District Courts and Special Tribunals. Focuses on advocacy, research, drafting, and preparing case law briefs.",
+    "email": "bahadur.khoso@arclaws.com",
+    "phone": "+92-316-2808253",
+    "expertise": [
+      "Civil Matters",
+      "Commercial Matters",
+      "Election Matters",
+      "Constitutional Matters",
+      "Advocacy and Research"
+    ],
+    "profile": {
+      "education": [
+        "Bachelor of Laws (LLB Hons) from the University of London",
+        "Bar-at-Law (Hon’ble Society of Lincoln’s Inn)",
+        "LL.M from BPP University, London"
+      ],
+      "experience": [
+        "Joined Ata-ur-Rahman & Co. in May 2024",
+        "Worked as an associate with Rizvi and Bukhari Associates",
+        "Focuses on advocacy, research, drafting, legal opinions, and preparing case law briefs",
+        "Appears before the High Courts, District Courts and Special Tribunals"
+      ],
+      "memberships": [
+        "Practicing Advocate of the High Courts of Pakistan",
+        "Lincoln’s Inn Society (Bar of England and Wales)"
+      ],
+      "appointments": [
+        "Called to the Bar of England and Wales: 2023",
+        "Joined the office: May 2024"
+      ]
+    }
+  }
+]
 }
