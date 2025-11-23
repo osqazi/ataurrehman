@@ -15,7 +15,7 @@ export default function AnimatedDoor() {
       // Remove component after animation completes
       const removeTimer = setTimeout(() => {
         setIsVisible(false);
-      }, 3000);
+      }, 1000);
       
       return () => clearTimeout(removeTimer);
     }, 1000);
