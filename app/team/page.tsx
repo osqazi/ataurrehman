@@ -87,7 +87,7 @@ import TeamCard from '@/app/components/TeamCard';
 import teamData from '@/app/data/teamMembers.json';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { TeamT } from '../types/team';
+// import { TeamT } from '../types/team';
 
 export default function Team() {
   const sectionRef = useRef(null);
@@ -149,7 +149,7 @@ export default function Team() {
 }
 
 // Separate component for animated cards
-function AnimatedTeamCard({ member, index }: { member: TeamT; index: number }) {
+function AnimatedTeamCard({ member, index }: { member: any; index: number }) {
   const cardRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: cardRef,
