@@ -1,5 +1,5 @@
 // types/team.ts
-export interface TeamMember {
+export interface TeamT {
   id: string;
   name: string;
   position: string;
