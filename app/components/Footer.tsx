@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-lg font-bold">Ata-ur-Rehman & Co.</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Providing exceptional legal services with integrity, expertise, and dedication since 1995.
+              Providing exceptional legal services with integrity, expertise, and dedication since 1972.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+92-XXX-XXXXXXX</span>
+                <span>+92-300-2798986</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
@@ -57,7 +57,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Main Office, City Center</span>
+                <span>206, Al Ameera Center, Near Passport Office, Shahrah-e-Liaquat, Saddar, Karachi - Pakistan</span>
               </div>
             </div>
           </div>

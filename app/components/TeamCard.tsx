@@ -7,7 +7,7 @@ interface Member {
   position: string;
   email: string;
   phone: string;
-}
+ }
 
 export default function TeamCard({ member }: { member: Member }) {
   return (
