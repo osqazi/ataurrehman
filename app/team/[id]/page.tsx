@@ -6,6 +6,7 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { Mail, Phone, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import teamData from '@/app/data/teamMembers.json';
 
 type TabType = 'profile' | 'education' | 'experience' | 'memberships';
@@ -24,6 +25,7 @@ interface Member {
   bio: string;
   email: string;
   phone: string;
+  image2?: string;
   expertise: string[];
   profile: Profile;
 }
@@ -233,18 +235,27 @@ export default function TeamMemberDetail() {
 
             {/* Right Side - Large Profile Image */}
             <div className="flex-shrink-0 lg:w-96">
-              <div className="bg-gray-200 h-80 lg:h-96 rounded-2xl flex flex-col items-center justify-center p-8">
-                <div className="text-center text-gray-600">
-                  <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-gray-600">
-                      {member.name.split(' ').map(n => n[0]).join('')}
-                    </span>
+              <div className="bg-gray-200 h-80 lg:h-96 rounded-2xl relative overflow-hidden flex flex-col items-center justify-center">
+                {member.image2 ? (
+                  <Image
+                    src={member.image2}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="text-center text-gray-600 p-8">
+                    <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center">
+                      <span className="text-3xl font-bold text-gray-600">
+                        {member.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                    <span className="text-lg">Profile Image</span>
+                    <p className="text-sm mt-2 text-gray-500">
+                      {member.name}
+                    </p>
                   </div>
-                  <span className="text-lg">Profile Image</span>
-                  <p className="text-sm mt-2 text-gray-500">
-                    {member.name}
-                  </p>
-                </div>
+                )}
               </div>
             </div>
           </div>

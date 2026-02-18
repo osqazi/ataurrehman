@@ -803,126 +803,126 @@ import { Publication, Author } from '@/app/types/publication';
 import Link from 'next/link';
 
 const publications: Publication[] = [
-  // {
-  //   id: 1,
-  //   title: "The Evolution of Corporate Governance in Pakistan: A Legal Perspective",
-  //   author: "Justice Ata-ur-Rehman (Retd.)",
-  //   publishDate: "2024-01-15",
-  //   journal: "Pakistan Law Journal",
-  //   category: "Corporate Law",
-  //   abstract: "An in-depth analysis of corporate governance reforms and their impact on Pakistani businesses in the global market.",
-  //   link: "#",
-  //   readTime: "12 min read",
-  //   tags: ["Corporate Governance", "Business Law", "Regulatory Compliance"]
-  // },
-  // {
-  //   id: 2,
-  //   title: "Digital Evidence in Criminal Proceedings: Admissibility and Challenges",
-  //   author: "Mudassir Abbasi",
-  //   publishDate: "2023-11-20",
-  //   journal: "Criminal Law Review",
-  //   category: "Criminal Defense",
-  //   abstract: "Exploring the legal framework for digital evidence admissibility in Pakistani courts and emerging challenges.",
-  //   link: "#",
-  //   readTime: "8 min read",
-  //   tags: ["Digital Evidence", "Criminal Procedure", "Technology Law"]
-  // },
-  // {
-  //   id: 3,
-  //   title: "Arbitration in Commercial Disputes: Trends and Best Practices",
-  //   author: "Obaid-ur-Rehman",
-  //   publishDate: "2023-09-10",
-  //   journal: "International Arbitration Journal",
-  //   category: "Arbitration",
-  //   abstract: "Comprehensive guide to effective arbitration strategies in complex commercial disputes in South Asia.",
-  //   link: "#",
-  //   readTime: "15 min read",
-  //   tags: ["Arbitration", "Commercial Law", "Dispute Resolution"]
-  // },
-  // {
-  //   id: 4,
-  //   title: "Intellectual Property Protection in the Digital Age",
-  //   author: "Anwar Hussain",
-  //   publishDate: "2023-08-05",
-  //   journal: "IP Law Quarterly",
-  //   category: "Intellectual Property",
-  //   abstract: "Analysis of IP law adaptations required for protecting digital assets and online intellectual property.",
-  //   link: "#",
-  //   readTime: "10 min read",
-  //   tags: ["Intellectual Property", "Digital Law", "Copyright"]
-  // },
-  // {
-  //   id: 5,
-  //   title: "Family Law Reforms: Balancing Tradition and Modernity",
-  //   author: "Mudassir Abbasi",
-  //   publishDate: "2023-06-18",
-  //   journal: "Family Law Journal",
-  //   category: "Family Law",
-  //   abstract: "Critical examination of recent family law reforms and their practical implementation in Pakistani society.",
-  //   link: "#",
-  //   readTime: "14 min read",
-  //   tags: ["Family Law", "Legal Reforms", "Social Justice"]
-  // },
-  // {
-  //   id: 6,
-  //   title: "Real Estate Regulations: Protecting Property Rights",
-  //   author: "Anwar Hussain",
-  //   publishDate: "2023-05-22",
-  //   journal: "Property Law Review",
-  //   category: "Real Estate",
-  //   abstract: "Comprehensive overview of property registration systems and legal protections for real estate investors.",
-  //   link: "#",
-  //   readTime: "9 min read",
-  //   tags: ["Real Estate", "Property Law", "Investment"]
-  // },
-  // {
-  //   id: 7,
-  //   title: "Employment Law in the Gig Economy",
-  //   author: "Justice Ata-ur-Rehman (Retd.)",
-  //   publishDate: "2023-04-30",
-  //   journal: "Labor Law Perspectives",
-  //   category: "Employment Law",
-  //   abstract: "Examining the legal status of gig workers and evolving employment relationships in modern economies.",
-  //   link: "#",
-  //   readTime: "11 min read",
-  //   tags: ["Employment Law", "Gig Economy", "Workers Rights"]
-  // },
-  // {
-  //   id: 8,
-  //   title: "Cross-Border Litigation: Jurisdictional Challenges",
-  //   author: "Obaid-ur-Rehman",
-  //   publishDate: "2023-03-12",
-  //   journal: "International Law Review",
-  //   category: "Litigation",
-  //   abstract: "Analysis of jurisdictional issues in international commercial litigation and enforcement of foreign judgments.",
-  //   link: "#",
-  //   readTime: "13 min read",
-  //   tags: ["International Law", "Litigation", "Jurisdiction"]
-  // },
-  // {
-  //   id: 9,
-  //   title: "White Collar Crime: Investigation and Defense Strategies",
-  //   author: "Mudassir Abbasi",
-  //   publishDate: "2023-02-28",
-  //   journal: "Criminal Defense Quarterly",
-  //   category: "Criminal Defense",
-  //   abstract: "Strategic approaches to defending white collar crime cases and navigating complex financial investigations.",
-  //   link: "#",
-  //   readTime: "16 min read",
-  //   tags: ["White Collar Crime", "Financial Law", "Defense Strategy"]
-  // },
-  // {
-  //   id: 10,
-  //   title: "Legal Tech Revolution: Transforming Law Practice",
-  //   author: "Justice Ata-ur-Rehman (Retd.)",
-  //   publishDate: "2023-01-15",
-  //   journal: "Modern Law Journal",
-  //   category: "Legal Technology",
-  //   abstract: "Exploring the impact of artificial intelligence and technology on traditional legal practice and ethics.",
-  //   link: "#",
-  //   readTime: "7 min read",
-  //   tags: ["Legal Technology", "AI in Law", "Practice Management"]
-  // }
+  {
+    id: 1,
+    title: "The Evolution of Corporate Governance in Pakistan: A Legal Perspective",
+    author: "Justice Ata-ur-Rehman (Retd.)",
+    publishDate: "2024-01-15",
+    journal: "Pakistan Law Journal",
+    category: "Corporate Law",
+    abstract: "An in-depth analysis of corporate governance reforms and their impact on Pakistani businesses in the global market.",
+    link: "#",
+    readTime: "12 min read",
+    tags: ["Corporate Governance", "Business Law", "Regulatory Compliance"]
+  },
+  {
+    id: 2,
+    title: "Digital Evidence in Criminal Proceedings: Admissibility and Challenges",
+    author: "Mudassir Abbasi",
+    publishDate: "2023-11-20",
+    journal: "Criminal Law Review",
+    category: "Criminal Defense",
+    abstract: "Exploring the legal framework for digital evidence admissibility in Pakistani courts and emerging challenges.",
+    link: "#",
+    readTime: "8 min read",
+    tags: ["Digital Evidence", "Criminal Procedure", "Technology Law"]
+  },
+  {
+    id: 3,
+    title: "Arbitration in Commercial Disputes: Trends and Best Practices",
+    author: "Obaid-ur-Rehman",
+    publishDate: "2023-09-10",
+    journal: "International Arbitration Journal",
+    category: "Arbitration",
+    abstract: "Comprehensive guide to effective arbitration strategies in complex commercial disputes in South Asia.",
+    link: "#",
+    readTime: "15 min read",
+    tags: ["Arbitration", "Commercial Law", "Dispute Resolution"]
+  },
+  {
+    id: 4,
+    title: "Intellectual Property Protection in the Digital Age",
+    author: "Anwar Hussain",
+    publishDate: "2023-08-05",
+    journal: "IP Law Quarterly",
+    category: "Intellectual Property",
+    abstract: "Analysis of IP law adaptations required for protecting digital assets and online intellectual property.",
+    link: "#",
+    readTime: "10 min read",
+    tags: ["Intellectual Property", "Digital Law", "Copyright"]
+  },
+  {
+    id: 5,
+    title: "Family Law Reforms: Balancing Tradition and Modernity",
+    author: "Mudassir Abbasi",
+    publishDate: "2023-06-18",
+    journal: "Family Law Journal",
+    category: "Family Law",
+    abstract: "Critical examination of recent family law reforms and their practical implementation in Pakistani society.",
+    link: "#",
+    readTime: "14 min read",
+    tags: ["Family Law", "Legal Reforms", "Social Justice"]
+  },
+  {
+    id: 6,
+    title: "Real Estate Regulations: Protecting Property Rights",
+    author: "Anwar Hussain",
+    publishDate: "2023-05-22",
+    journal: "Property Law Review",
+    category: "Real Estate",
+    abstract: "Comprehensive overview of property registration systems and legal protections for real estate investors.",
+    link: "#",
+    readTime: "9 min read",
+    tags: ["Real Estate", "Property Law", "Investment"]
+  },
+  {
+    id: 7,
+    title: "Employment Law in the Gig Economy",
+    author: "Justice Ata-ur-Rehman (Retd.)",
+    publishDate: "2023-04-30",
+    journal: "Labor Law Perspectives",
+    category: "Employment Law",
+    abstract: "Examining the legal status of gig workers and evolving employment relationships in modern economies.",
+    link: "#",
+    readTime: "11 min read",
+    tags: ["Employment Law", "Gig Economy", "Workers Rights"]
+  },
+  {
+    id: 8,
+    title: "Cross-Border Litigation: Jurisdictional Challenges",
+    author: "Obaid-ur-Rehman",
+    publishDate: "2023-03-12",
+    journal: "International Law Review",
+    category: "Litigation",
+    abstract: "Analysis of jurisdictional issues in international commercial litigation and enforcement of foreign judgments.",
+    link: "#",
+    readTime: "13 min read",
+    tags: ["International Law", "Litigation", "Jurisdiction"]
+  },
+  {
+    id: 9,
+    title: "White Collar Crime: Investigation and Defense Strategies",
+    author: "Mudassir Abbasi",
+    publishDate: "2023-02-28",
+    journal: "Criminal Defense Quarterly",
+    category: "Criminal Defense",
+    abstract: "Strategic approaches to defending white collar crime cases and navigating complex financial investigations.",
+    link: "#",
+    readTime: "16 min read",
+    tags: ["White Collar Crime", "Financial Law", "Defense Strategy"]
+  },
+  {
+    id: 10,
+    title: "Legal Tech Revolution: Transforming Law Practice",
+    author: "Justice Ata-ur-Rehman (Retd.)",
+    publishDate: "2023-01-15",
+    journal: "Modern Law Journal",
+    category: "Legal Technology",
+    abstract: "Exploring the impact of artificial intelligence and technology on traditional legal practice and ethics.",
+    link: "#",
+    readTime: "7 min read",
+    tags: ["Legal Technology", "AI in Law", "Practice Management"]
+  }
 ];
 
 const categories: string[] = [

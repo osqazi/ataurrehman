@@ -6,6 +6,8 @@ export interface TeamT {
   bio: string;
   email: string;
   phone: string;
+  image?: string;
+  image2?: string;
   expertise: string[];
   profile: {
     education: string[];

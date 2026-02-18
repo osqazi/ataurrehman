@@ -44,42 +44,42 @@ interface AlternatingSectionProps {
 const officeSections = [
   {
     id: 1,
-    image: "/office1.png",
+    image: "/office1.webp",
     title: "Our Legacy",
     content: "The practice was established in 1972 in Karachi by Justice (Retd.) Ata-ur-Rahman under whose able guidance it blossomed into one of the most reputable chambers in the city. With over 50 years of excellence, we continue to uphold the highest standards of legal practice.",
     icon: <Award className="h-6 w-6" />
   },
   {
     id: 2,
-    image: "/office2.png",
+    image: "/office2.webp",
     title: "Expert Leadership",
     content: "Justice (Retd.) Ata-ur-Rahman, remained an advocate of the High Court and an Advocate of the Supreme Court of Pakistan, after which he was elevated to the bench on 27.05.1998, till his retirement on 17.07.2005 as a Senior Puisne Judge of the High Court of Sindh at Karachi.",
     icon: <UserCheck className="h-6 w-6" />
   },
   {
     id: 3,
-    image: "/office3.png",
+    image: "/office3.webp",
     title: "Modern Practice",
     content: "Mr. Obaid-ur-Rahman Khan, is an enrolled advocate of the Hon'ble Supreme Court of Pakistan. He has done his bachelors in English Literature from University of Karachi, after which he graduated with his LL.B. from Hamdard School of Law, Hamdard University with two gold medals.",
     icon: <BookOpen className="h-6 w-6" />
   },
   {
     id: 4,
-    image: "/office4.png",
+    image: "/office4.webp",
     title: "Comprehensive Services",
     content: "We provide a comprehensive range of legal services dealing with matters in the District Courts, National Accountability Courts, Banking Courts, all Special Courts in Karachi, the High Courts of Pakistan, and the Hon'ble Supreme Court of Pakistan.",
     icon: <Gavel className="h-6 w-6" />
   },
   {
     id: 5,
-    image: "/office5.png",
+    image: "/office5.webp",
     title: "Professional Team",
     content: "The practice has a total strength of 7 lawyers, 4 court clerks and a stenographer. Our team combines decades of experience with fresh perspectives to provide comprehensive legal solutions.",
     icon: <TeamIcon className="h-6 w-6" />
   },
   {
     id: 6,
-    image: "/office6.png",
+    image: "/office6.webp",
     title: "Client Confidentiality",
     content: "We pride ourselves on maintaining the confidentiality of our clients which includes ultra high net worth individuals, former heads of state, members of parliament, multinational corporations, and financial institutions.",
     icon: <ShieldCheck className="h-6 w-6" />
@@ -388,7 +388,7 @@ export default function Home() {
                   src="/office.png"
                   alt="Law firm office interior"
                   fill
-                  className="object-cover"
+                  className="object-fill"
                   priority
                 />
                 <div className="absolute inset-0 bg-black/10"></div>
