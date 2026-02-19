@@ -803,18 +803,18 @@ import { Publication, Author } from '@/app/types/publication';
 import Link from 'next/link';
 
 const publications: Publication[] = [
-  // {
-  //   id: 1,
-  //   title: "The Evolution of Corporate Governance in Pakistan: A Legal Perspective",
-  //   author: "Justice Ata-ur-Rehman (Retd.)",
-  //   publishDate: "2024-01-15",
-  //   journal: "Pakistan Law Journal",
-  //   category: "Corporate Law",
-  //   abstract: "An in-depth analysis of corporate governance reforms and their impact on Pakistani businesses in the global market.",
-  //   link: "#",
-  //   readTime: "12 min read",
-  //   tags: ["Corporate Governance", "Business Law", "Regulatory Compliance"]
-  // },
+  {
+    id: 1,
+    title: "INTERNATIONAL LAW, HOSTILE NON-STATE ENTITIES, THE SCOPE OF THE PRINCIPLE OF SELF DEFENCE AND PAKISTAN",
+    author: "Obaid-ur-Rahman Khan",
+    publishDate: "2011-01-03",
+    journal: "LLM Dissertation (Revised for Book Publication)",
+    category: "International Law, Use of Force, National Security, Law of Armed Conflict",
+    abstract: "This paper examines the complex issue of self-defence against hostile non-state entities (HNS-Es) or terrorist organizations operating from within the territory of a sovereign host state, focusing on the principles of jus ad bellum.",
+    link: "#",
+    readTime: "90 min read",
+    tags: ["International Law", "Self Defence (Article 51)", "Non-state Actors", "Sovereignty", "Armed Attack", "Pakistan", "Counter-Terrorism", "Jus ad Bellum"]
+  },
   // {
   //   id: 2,
   //   title: "Digital Evidence in Criminal Proceedings: Admissibility and Challenges",
@@ -1022,25 +1022,25 @@ const authors: Author[] = [
   {
     name: "Justice Ata-ur-Rehman (Retd.)",
     role: "Founder",
-    publications: "25+ Articles",
+    publications: "--- Articles",
     expertise: "Corporate Law, Employment Law, Legal Technology"
   },
   {
     name: "Obaid-ur-Rehman",
     role: "Senior Advocate High Court",
-    publications: "18+ Articles",
+    publications: "01 Article(s)",
     expertise: "Arbitration, International Law, Commercial Litigation"
   },
   {
     name: "Mudassir Abbasi",
     role: "Senior Advocate High Court",
-    publications: "22+ Articles",
+    publications: "--- Articles",
     expertise: "Criminal Defense, Family Law, White Collar Crime"
   },
   {
     name: "Anwar Hussain",
     role: "Senior Advocate High Court",
-    publications: "15+ Articles",
+    publications: "--- Articles",
     expertise: "Intellectual Property, Real Estate, Property Law"
   }
 ];

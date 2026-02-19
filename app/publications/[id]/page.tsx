@@ -30,41 +30,35 @@ interface Publication {
 
 // Mock data - replace with your actual data source
 const publicationsData: Publication[] = [
-  {
-    id: 1,
-    title: "The Evolution of Corporate Governance in Pakistan: A Legal Perspective",
-    author: "Justice Ata-ur-Rehman (Retd.)",
-    publishDate: "2024-01-15",
-    journal: "Pakistan Law Journal",
-    category: "Corporate Law",
-    abstract: "An in-depth analysis of corporate governance reforms and their impact on Pakistani businesses in the global market.",
+ 
+{
+    id: 1, // Assigned a new ID
+    title: "INTERNATIONAL LAW, HOSTILE NON-STATE ENTITIES, THE SCOPE OF THE PRINCIPLE OF SELF DEFENCE AND PAKISTAN",
+    author: "Obaid-ur-Rahman Khan",
+    publishDate: "2011-01-03",
+    journal: "LLM Dissertation (Revised for Book Publication)",
+    category: "International Law, Use of Force, National Security, Law of Armed Conflict",
+    abstract: "This paper examines the complex issue of self-defence against hostile non-state entities (HNS-Es) or terrorist organizations operating from within the territory of a sovereign host state, focusing on the principles of jus ad bellum. The central question addressed is whether a victim state can lawfully infringe upon the host state's sovereignty to conduct military action when the HNS-Es are not attributable to the host state. The article contends that a distinction must be drawn between different types of host states. The author argues that a host state which has the will to expel the non-state actors but is unable to do so for reasons other than military or political weakness, should have its territorial sovereignty respected. However, the territory of a completely failed state may be infringed for self-defence purposes due to its political failure. The paper advocates for why Pakistan's sovereignty, specifically, should not be infringed or violated in the context of counter-terrorism efforts on its north-western frontier.",
     content: `
+      <h2>PREFACE AND ACKNOWLEDGEMENT</h2>
+      <p>It has been a whole year and a half since I completed my dissertation on the subject Hostile non-state entities: the scope of employing the principles of self defence against terrorist organizations operating in a parasitic form in a sovereign state as part of my LLM course in the subject of International Law of Armed Conflict and Use of Force at the London School of Economics and Political Science. And it has been six months since Mr. Kamran Noorani graciously consented to publishing the same as a book. Since then I have added and subtracted substantially from my original work and the new shape that my thoughts and research have now taken, is in light of the developments on Pakistans north western frontier. Now is the time, I think, that the international community should be presented with a case of why Pakistans territory, and in turn its sovereignty, should not be infringed and violated. I want to take this opportunity to thank all those who have been an inspiration in my life and played a vital role in helping me achieve whatever I have today. First and foremost I am grateful to my parents, Sheba Ansari and Ata-ur-Rahman, to whom I dedicate this work with love, for their immeasurable sacrifice and unwavering faith and support for me in all my endeavours. Mr. Khalid Anwer, Senior Advocate of the Supreme Court of Pakistan, for literally teaching me how to read, write and think. I would also like to thank Sir Justice Christopher Greenwood for guiding, and more importantly tolerating, an over-zealous graduate student in his International Law of Armed Conflict class at the L.S.E.. Lastly I would like to thank my wife Rafeah, for still smiling at me every time she sees me even after our ten months apart.</p>
+      <p>Obaid-ur-Rahman Khan<br>3.1.2011<br>Karachi</p>
+      <p>Fix reason firmly in her seat, and call to her tribunal every fact, every opinion. Question with boldness even the existence of a God; because if there be one, He must more approve the homage of reason, than that of blind folded fear.</p>
+      
       <h2>Introduction</h2>
-      <p>Corporate governance has undergone significant transformations in Pakistan over the past two decades. This article examines the evolution of corporate governance frameworks and their practical implementation in the Pakistani business landscape.</p>
-      
-      <h2>Historical Context</h2>
-      <p>The journey of corporate governance in Pakistan began with the Companies Ordinance 1984, which laid the foundation for corporate structures and director responsibilities. However, the real transformation came with the Securities and Exchange Commission of Pakistan's (SECP) Corporate Governance Code of 2002.</p>
-      
-      <h2>Key Reforms and Their Impact</h2>
-      <p>The 2017 Corporate Governance Regulations marked a significant milestone, introducing mandatory requirements for board composition, audit committees, and risk management frameworks. These reforms have substantially improved transparency and accountability in listed companies.</p>
-      
-      <h2>Challenges and Opportunities</h2>
-      <p>Despite progress, challenges remain in implementation, particularly in family-owned businesses and small to medium enterprises. The article explores these challenges and proposes practical solutions for effective governance.</p>
-      
-      <h2>Conclusion</h2>
-      <p>The evolution of corporate governance in Pakistan demonstrates a positive trajectory towards international standards, though continuous improvement and adaptation to local contexts remain essential for sustainable growth.</p>
+      <p>It is the fear in man which has led to so many times his near extinction. And it is the fear of fear which has led him to the legislation of laws and rules deterring him from acting in any manner which is unreasonable and against the norms of humanity. Legislation, either in the forms of religious edicts, socially acceptable behaviour or by parliaments in countries and nations all over the world, all indicate the necessity of self control and the injection of reason in the actions of men and governments alike. Principles of international law are based on similar foundations of reason and good sense which prevails to quite an extent between majority of the nations. Two wars and more than 7 million deaths later, the citizens of the world realized the need to exercise self restraint and felt the need to impose upon themselves laws and their accompanying punishments to prevent unnecessary loss of life and property. The ultimate sources of reason and morality were employed and it was in that spirit that the Charter of the United Nations was promulgated in the year 1945 and in it Article 2(4) was encapsulated laying down the basis of the international law of armed conflict. It reads as follows: Article 2 (4) All members shall refrain in their international relations from the threat or use of force against the territorial integrity or political independence of any State, or in any other manner inconsistent with the Purposes of the United Nations. With such noble beginnings mankind started down the path of a new age after the Second World War. But with the descent of the Iron Curtain and the rise of Communism, the world was many times at the edge of war and annihilation. Man had realised that the wars of people will be more terrible than the wars of kings. As ideas evolved so did the technique and the practice of war. It moved from battlefields, into cities and towns, through borders and boundaries and into backyards and alleys. The opponent changed from being another kingdom, to a state, into a government and then an idea. An idea that martyrdom is a worthy contribution for the attainment of an ethereal objective. Today the opponent is no longer associated with any particular region, race or culture or even a state. It has attained an almost omnipotent presence which is not limited to any boundary or locality. Non-state actors today co-ordinate, plan, strategize and launch attacks from anywhere in the world. From the caves in Kandahar, to the madarsas in Multan, alleged terrorist organizations under the noses of unassuming (and sometimes not so unassuming) host states carry out operations in other countries all over the world. The result is a clash of a number of principles of International law and questions are asked: Are the acts of the non-state entities enough to qualify as armed acts which would then further qualify to be responded by acts of self defence? Can the victim state/country claim the right of self defence in such a situation based on customary international law or on the basis of what is provided in the United Nations Charter? What is the scope of this right of self defence, if any at all in cases where the host state has no involvement whatsoever with the terrorists/non-state actors operating in its territory? What forms of self defence measures (if any) can possibly be taken against such an armed act considering that the non-state entity is based in another country? And more generally, is the infringement of a states territory and its sovereignty a lawful and equally justifiable act, even it is for the purpose of destroying terrorist hideouts especially since the State itself is helpless or has not been able to expunge the terrorists due to reasons other than its military or political weakness? This paper proposes to advocate the point that there needs to be a distinction drawn between the various kinds of host states where the non-state actors/entities/ terrorists reside in a parasitic form. It will be contended that the host state which has the will, but for a number of reasons, other than its military, political or economic weakness, is not able to expel the non-state actors, necessitates a different response as compared to a host state which is a failed state. While the first states territory cannot be and should not be infringed to carry out an act of self defence in the form of a preventive strike, or otherwise, the latters territory due to its political failure can be infringed for the same purpose. Before forging any further in this exercise, it is important to note that this paper will be focused only on the jus ad bellum as opposed to the jus in bello. The question of applying the rules and principles involved in the latter will apply only after the questions framed above (and hoped to be answered in the following pages) are answered.</p>
     `,
-    link: "#",
-    readTime: "12 min read",
-    tags: ["Corporate Governance", "Business Law", "Regulatory Compliance", "SECP", "Board Composition"],
+    link: '#',
+    readTime: "90 min read",
+    tags: ["International Law", "Self Defence (Article 51)", "Non-state Actors", "Sovereignty", "Armed Attack", "Pakistan", "Counter-Terrorism", "Jus ad Bellum"],
     authorDetails: {
-      name: "Justice Ata-ur-Rehman (Retd.)",
-      role: "Founder",
-      email: "justice.ata@arclaws.com",
-      publications: "25+ Articles",
-      expertise: ["Constitutional Law", "Civil Litigation", "Judicial Review", "Legal Scholarship", "Arbitration"]
+      name: "Obaid-ur-Rahman Khan",
+      role: "Principal Litigator",
+      email: "obaid@arclaws.com",
+      publications: "Published dissertation on ‘International Law, Hostile Non-State Entities, The Scope of the Principle of Self Defense and Pakistan’",
+      expertise: ["Commercial Litigation", "Corporate Litigation", "Civil Litigation", "Criminal Litigation", "Constitutional Matters", "International Law"]
     }
-  },
+},
   {
     id: 2,
     title: "Digital Evidence in Criminal Proceedings: Admissibility and Challenges",
