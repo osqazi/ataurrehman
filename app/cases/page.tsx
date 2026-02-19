@@ -1,6 +1,39 @@
+import type { Metadata } from "next";
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { Scale, Award, Calendar, User, Gavel } from 'lucide-react';
+import StructuredData from '../components/StructuredData';
+
+// Notable Cases page metadata - optimized for case results and track record
+export const metadata: Metadata = {
+  title: "Notable Cases | Successful Legal Representations Karachi",
+  description:
+    "Explore our track record of successful litigation and legal victories. Landmark cases in Corporate Law, Criminal Defense, Constitutional Petitions & more.",
+  keywords: [
+    "successful lawyer Karachi",
+    "landmark legal cases Pakistan",
+    "case results attorney",
+    "litigation success rate",
+    "legal victories Karachi",
+    "court cases won",
+    "experienced advocate Sindh",
+  ].join(", "),
+  openGraph: {
+    title: "Notable Cases | Successful Legal Representations",
+    description: "Explore our track record of successful litigation and legal victories across various practice areas.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Ata-ur-Rahman & Co. Notable Cases",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.arclaws.com/cases",
+  },
+};
 
 const notableCases = 
   // {
@@ -338,6 +371,8 @@ const CaseCard = ({ caseItem }: { caseItem: CaseItem }) => {
 export default function NotableCases() {
   return (
     <div className="min-h-screen">
+      {/* Structured data for cases page */}
+      <StructuredData type="organization" />
       <Header />
       
       {/* Cases Header */}

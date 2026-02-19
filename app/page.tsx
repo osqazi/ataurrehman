@@ -1,4 +1,5 @@
 
+import type { Metadata } from "next";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import ServiceCard from "@/app/components/ServiceCard";
@@ -24,6 +25,41 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import heroimg from "@/public/hero.png";
+import StructuredData from "./components/StructuredData";
+
+// Home page metadata - optimized for legal service keywords in Karachi
+export const metadata: Metadata = {
+  title: "Leading Lawyers in Karachi | Ata-ur-Rahman & Co. Since 1972",
+  description:
+    "Premier law firm in Karachi with 50+ years of excellence. Expert advocates in Corporate Law, Litigation, Criminal Defense, Family Law & Real Estate. Free consultation.",
+  keywords: [
+    "lawyer Karachi",
+    "best law firm Pakistan",
+    "legal advocate Sindh",
+    "corporate lawyer Karachi",
+    "criminal defense attorney",
+    "family law lawyer",
+    "property attorney Karachi",
+    "litigation lawyer",
+    "Ata-ur-Rahman",
+    "ARC Laws",
+  ].join(", "),
+  openGraph: {
+    title: "Leading Lawyers in Karachi | Ata-ur-Rahman & Co.",
+    description: "Premier law firm with 50+ years of excellence. Expert legal services in Corporate Law, Litigation, Criminal Defense & more.",
+    images: [
+      {
+        url: "/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Ata-ur-Rahman & Co. - Leading Law Firm in Karachi",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.arclaws.com/",
+  },
+};
 
 interface OfficeSection {
   id: number;
@@ -204,6 +240,8 @@ const AlternatingSection = ({ section, index }: AlternatingSectionProps) => {
 export default function Home() {
   return (
     <div className="min-h-screen">
+      {/* Structured data for rich search results */}
+      <StructuredData type="all" />
       <AnimatedDoor />
       <Header />
 

@@ -21,7 +21,7 @@
 //   return (
 //     <div className="min-h-screen">
 //       <Header />
-      
+
 //       {/* Team Header */}
 //       <section className="bg-primary-700 text-white">
 //         <div className="container-custom section-padding">
@@ -80,26 +80,53 @@
 //   );
 // }
 
-"use client"
+import type { Metadata } from "next";
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import TeamCard from '@/app/components/TeamCard';
 import teamData from '@/app/data/teamMembers.json';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
 import { TeamT } from '../types/team';
+import StructuredData from '../components/StructuredData';
+import TeamAnimationWrapper from './TeamAnimationWrapper';
+
+// Team page metadata - optimized for lawyer/attorney keywords
+export const metadata: Metadata = {
+  title: "Our Team | Expert Lawyers & Advocates in Karachi",
+  description:
+    "Meet our distinguished team of legal experts with decades of combined experience. Former judges, senior advocates, and specialist attorneys ready to serve you.",
+  keywords: [
+    "lawyers Karachi",
+    "legal team Pakistan",
+    "senior advocates Sindh",
+    "expert attorneys",
+    "legal consultants",
+    "law firm team",
+    "experienced lawyers",
+  ].join(", "),
+  openGraph: {
+    title: "Our Team | Expert Lawyers & Advocates",
+    description: "Meet our distinguished team of legal experts with decades of combined experience.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Ata-ur-Rahman & Co. Team",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.arclaws.com/team",
+  },
+};
 
 export default function Team() {
-  const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"]
-  });
-
   return (
     <div className="min-h-screen">
+      {/* Structured data for team page */}
+      <StructuredData type="organization" />
       <Header />
-      
+
       {/* Team Header */}
       <section className="bg-primary-700 text-white">
         <div className="container-custom section-padding">
@@ -113,11 +140,11 @@ export default function Team() {
       </section>
 
       {/* Team Members with Individual Scroll Animations */}
-      <section ref={sectionRef} className="section-padding bg-gray-50">
+      <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {teamData.teamMembers.map((member, index) => (
-              <AnimatedTeamCard key={index} member={member} index={index} />
+              <TeamAnimationWrapper key={index} member={member} index={index} />
             ))}
           </div>
         </div>
@@ -145,31 +172,5 @@ export default function Team() {
 
       <Footer />
     </div>
-  );
-}
-
-// Separate component for animated cards
-function AnimatedTeamCard({ member, index }: { member: TeamT; index: number }) {
-  const cardRef = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: cardRef,
-    offset: ["start end", "center center"]
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [100 + (index * 20), 0]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 1]);
-  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-
-  return (
-    <motion.div
-      ref={cardRef}
-      style={{
-        y,
-        opacity,
-        scale
-      }}
-    >
-      <TeamCard member={member} />
-    </motion.div>
   );
 }

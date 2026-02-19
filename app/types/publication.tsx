@@ -17,3 +17,22 @@ export interface Author {
   publications: string;
   expertise: string;
 }
+
+// Publication categories for filtering
+export const categories = [
+  "All",
+  "International Law",
+  "Corporate Law",
+  "Criminal Defense",
+  "Arbitration",
+  "Intellectual Property",
+  "Family Law",
+  "Real Estate",
+  "Employment Law",
+  "Litigation",
+  "Legal Technology",
+  "Constitutional Law",
+  "Service Matters",
+  "Election Disputes",
+  "Rent Disputes",
+];

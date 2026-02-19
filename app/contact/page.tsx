@@ -1,12 +1,47 @@
+import type { Metadata } from "next";
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import ContactForm from '@/app/components/ContactForm';
 import { Phone, Mail, MapPin, Clock, Scale } from 'lucide-react';
 import LocationMap from '../components/LocationMap';
+import StructuredData from '../components/StructuredData';
+
+// Contact page metadata - optimized for local SEO and contact intent
+export const metadata: Metadata = {
+  title: "Contact Us | Free Legal Consultation Karachi | Ata-ur-Rahman & Co.",
+  description:
+    "Get in touch with Karachi's leading law firm. Free consultation available. Call +92-21-35685596 or visit us at Al Ameera Center, Saddar, Karachi.",
+  keywords: [
+    "contact lawyer Karachi",
+    "legal consultation Pakistan",
+    "law firm contact",
+    "free legal advice Karachi",
+    "attorney contact",
+    "lawyer phone number",
+    "legal help Karachi",
+  ].join(", "),
+  openGraph: {
+    title: "Contact Us | Free Legal Consultation",
+    description: "Get in touch with Karachi's leading law firm. Free consultation available.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Ata-ur-Rahman & Co.",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.arclaws.com/contact",
+  },
+};
 
 export default function Contact() {
   return (
     <div className="min-h-screen">
+      {/* Structured data for contact page with LocalBusiness schema */}
+      <StructuredData type="localBusiness" />
       <Header />
       
       {/* Contact Header */}

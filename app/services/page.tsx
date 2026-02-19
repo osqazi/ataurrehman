@@ -1,7 +1,42 @@
+import type { Metadata } from "next";
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import ServiceCard from '@/app/components/ServiceCard';
 import { Briefcase, Scale, Shield, Heart, Home, Award, Users, Building } from 'lucide-react';
+import StructuredData from '../components/StructuredData';
+
+// Services page metadata - optimized for legal service keywords
+export const metadata: Metadata = {
+  title: "Legal Services Karachi | Corporate, Litigation, Criminal & Family Law",
+  description:
+    "Comprehensive legal services in Karachi: Corporate Advisory, Litigation, Criminal Defense, Family Law, Real Estate, Employment Law & Arbitration. Expert representation.",
+  keywords: [
+    "legal services Karachi",
+    "corporate lawyer Pakistan",
+    "litigation attorney Sindh",
+    "criminal defense lawyer",
+    "family law attorney",
+    "real estate lawyer Karachi",
+    "employment law attorney",
+    "arbitration services Pakistan",
+    "legal consultant Karachi",
+  ].join(", "),
+  openGraph: {
+    title: "Legal Services | Ata-ur-Rahman & Co.",
+    description: "Comprehensive legal services in Corporate Law, Litigation, Criminal Defense, Family Law & more.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Ata-ur-Rahman & Co. Legal Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.arclaws.com/services",
+  },
+};
 
 const allServices = [
   {
@@ -89,6 +124,8 @@ const allServices = [
 export default function Services() {
   return (
     <div className="min-h-screen">
+      {/* Structured data for services page */}
+      <StructuredData type="legalService" />
       <Header />
       
       {/* Services Header */}

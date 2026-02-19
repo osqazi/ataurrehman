@@ -794,13 +794,46 @@
 //   );
 // }
 
-'use client';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { FileText, Calendar, User, ExternalLink, BookOpen, Search } from 'lucide-react';
-import { useState } from 'react';
+import type { Metadata } from "next";
 import { Publication, Author } from '@/app/types/publication';
 import Link from 'next/link';
+import StructuredData from '../components/StructuredData';
+import PublicationsContent from './PublicationsContent';
+
+// Publications page metadata - optimized for legal thought leadership
+export const metadata: Metadata = {
+  title: "Legal Publications | Expert Insights & Analysis Karachi",
+  description:
+    "Read expert legal analysis and insights from our team. Publications on Corporate Law, International Law, Criminal Defense, Arbitration & more by leading advocates.",
+  keywords: [
+    "legal publications Pakistan",
+    "law journal articles",
+    "legal analysis Karachi",
+    "corporate law articles",
+    "international law Pakistan",
+    "legal insights",
+    "law firm blog",
+    "legal thought leadership",
+  ].join(", "),
+  openGraph: {
+    title: "Legal Publications | Expert Insights & Analysis",
+    description: "Read expert legal analysis and insights from our team of leading advocates.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Ata-ur-Rahman & Co. Publications",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.arclaws.com/publications",
+  },
+};
 
 const publications: Publication[] = [
   {
@@ -1045,166 +1078,14 @@ const authors: Author[] = [
   }
 ];
 
+// Main Publications page component (Server Component)
+// Client-side interactivity is handled by PublicationsContent
 export default function Publications() {
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
-  const [searchTerm, setSearchTerm] = useState<string>("");
-
-  const filteredPublications: Publication[] = publications.filter((publication: Publication) => {
-    const matchesCategory: boolean = selectedCategory === "All" || publication.category === selectedCategory;
-    
-    if (!searchTerm.trim()) {
-      return matchesCategory;
-    }
-    
-    const searchLower: string = searchTerm.toLowerCase();
-    const matchesSearch: boolean = 
-      publication.title.toLowerCase().includes(searchLower) ||
-      publication.abstract.toLowerCase().includes(searchLower) ||
-      publication.author.toLowerCase().includes(searchLower) ||
-      publication.journal.toLowerCase().includes(searchLower) ||
-      publication.tags.some((tag: string) => tag.toLowerCase().includes(searchLower));
-    
-    return matchesCategory && matchesSearch;
-  });
-
   return (
     <div className="min-h-screen">
-      <Header />
-      
-      {/* Publications Header */}
-      <section className="bg-primary-700 text-white">
-        <div className="container-custom section-padding">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Legal Publications</h1>
-            <p className="text-xl text-primary-100">
-              Insights, Analysis, and Thought Leadership from Our Expert Litigators
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Search and Filter Section */}
-      <section className="section-padding bg-white border-b border-gray-200">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            {/* Search Bar */}
-            <div className="relative mb-6">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-              <input
-                type="text"
-                placeholder="Search publications by title, author, or topic..."
-                value={searchTerm}
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-              />
-            </div>
-
-            {/* Category Filter */}
-            <div className="flex flex-wrap gap-2 justify-center">
-              {categories.map((category: string) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    selectedCategory === category
-                      ? 'bg-primary-600 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Publications Grid */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Featured Articles & Research
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Explore our collection of published works covering diverse legal topics and emerging trends.
-            </p>
-          </div>
-
-          {filteredPublications.length === 0 ? (
-            <div className="text-center py-12">
-              <FileText className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">No publications found</h3>
-              <p className="text-gray-600">Try adjusting your search or filter criteria.</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredPublications.map((publication: Publication) => (
-                <PublicationCard key={publication.id} publication={publication} />
-              ))}
-            </div>
-          )}
-
-          {/* Results Count */}
-          <div className="mt-8 text-center text-gray-600">
-            Showing {filteredPublications.length} of {publications.length} publications
-            {searchTerm && ` for "${searchTerm}"`}
-            {selectedCategory !== "All" && ` in ${selectedCategory}`}
-          </div>
-        </div>
-      </section>
-
-      {/* Authors Spotlight */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Contributing Authors
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Meet the legal experts behind our publications
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {authors.map((author: Author, index: number) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-6 text-center">
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <User className="h-8 w-8 text-primary-600" />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-1">{author.name}</h3>
-                <p className="text-primary-600 text-sm mb-2">{author.role}</p>
-                <p className="text-sm text-gray-600 mb-3">{author.publications}</p>
-                <p className="text-xs text-gray-500">{author.expertise}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="section-padding bg-primary-600 text-white">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Stay Updated with Legal Insights
-          </h2>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Subscribe to receive our latest publications and legal updates directly in your inbox.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
-            />
-            <button className="px-6 py-3 bg-white text-primary-700 rounded-lg font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
+      {/* Structured data for publications page */}
+      <StructuredData type="organization" />
+      <PublicationsContent />
     </div>
   );
 }

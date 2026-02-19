@@ -1,0 +1,26 @@
+{
+  "name": "Ata-ur-Rahman & Co. - Legal Consultants & Advocates",
+  "short_name": "ARC Laws",
+  "description": "Leading legal services in Karachi since 1972. Expert advocates in Corporate Advisory, Litigation, Criminal Defense, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a5f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "legal", "professional services"],
+  "lang": "en-PK",
+  "dir": "ltr"
+}

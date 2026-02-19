@@ -5,64 +5,90 @@ import Image from "next/image";
 
 export default function AnimatedDoor() {
   const [isVisible, setIsVisible] = useState(true);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [animationStarted, setAnimationStarted] = useState(false);
 
   useEffect(() => {
     // Start animation after component mounts
     const timer = setTimeout(() => {
-      setIsAnimating(true);
+      console.log("Starting animation");
+      setAnimationStarted(true);
       
       // Remove component after animation completes
       const removeTimer = setTimeout(() => {
+        console.log("Removing component");
         setIsVisible(false);
-      }, 1000);
+      }, 2100); // Slightly longer than animation
       
       return () => clearTimeout(removeTimer);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
-  if (!isVisible) return null;
+  if (!isVisible) {
+    console.log("Component hidden");
+    return null;
+  }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary-900">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary-900 overflow-hidden">
       
-      {/* Left Door Half - using left-door.png */}
+      {/* Left Door Half */}
       <div
-        className={`absolute inset-y-0 left-0 w-1/2 transition-transform duration-5000 ease-out ${
-          isAnimating ? "-translate-x-full" : "translate-x-0"
-        }`}
+        style={{
+          position: 'absolute',
+          top: 0,
+          bottom: 0,
+          left: 0,
+          width: '50%',
+          transform: animationStarted ? 'translateX(-100%)' : 'translateX(0)',
+          transition: 'transform 1.5s ease-in-out',
+        }}
       >
-        <Image
-          src="/left-door.png" // Pre-split left half
-          alt="Left door"
-          fill
-          className="object-cover"
-          priority
-        />
+        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+          <Image
+            src="/left-door.png"
+            alt="Left door"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>
       </div>
 
-      {/* Right Door Half - using right-door.png */}
+      {/* Right Door Half */}
       <div
-        className={`absolute inset-y-0 right-0 w-1/2 transition-transform duration-5000 ease-out ${
-          isAnimating ? "translate-x-full" : "translate-x-0"
-        }`}
+        style={{
+          position: 'absolute',
+          top: 0,
+          bottom: 0,
+          right: 0,
+          width: '50%',
+          transform: animationStarted ? 'translateX(100%)' : 'translateX(0)',
+          transition: 'transform 1.5s ease-in-out',
+        }}
       >
-        <Image
-          src="/right-door.png" // Pre-split right half
-          alt="Right door"
-          fill
-          className="object-cover"
-          priority
-        />
+        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+          <Image
+            src="/right-door.png"
+            alt="Right door"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>
       </div>
 
       {/* Brand Text */}
       <div
-        className={`relative z-10 text-center transition-all duration-5000 ${
-          isAnimating ? "opacity-0 scale-90" : "opacity-100 scale-100"
-        }`}
+        style={{
+          position: 'relative',
+          zIndex: 10,
+          textAlign: 'center',
+          opacity: animationStarted ? 0 : 1,
+          transform: animationStarted ? 'scale(0.9)' : 'scale(1)',
+          transition: 'all 1.5s ease-in-out',
+        }}
       >
         <h1 className="text-5xl font-bold text-white mb-4 font-serif">
           Ata-ur-Rahman & Co.
