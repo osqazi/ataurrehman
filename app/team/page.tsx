@@ -88,6 +88,7 @@ import teamData from '@/app/data/teamMembers.json';
 import { TeamT } from '../types/team';
 import StructuredData from '../components/StructuredData';
 import TeamAnimationWrapper from './TeamAnimationWrapper';
+import OtherTeamMembers from './OtherTeamMembers';
 
 // Team page metadata - optimized for lawyer/attorney keywords
 export const metadata: Metadata = {
@@ -149,6 +150,9 @@ export default function Team() {
           </div>
         </div>
       </section>
+
+      {/* Other Team Members Section */}
+      <OtherTeamMembers />
 
       {/* Stats Section */}
       <section className="section-padding bg-white">
