@@ -99,9 +99,9 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
           <p>&copy; {currentYear} Ata-ur-Rahman & Co. All rights reserved.</p>
           <p className="mt-2">
-            <a href="https://metalog.inc" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-              Developed by: MetaLog Inc.
-            </a>
+            <Link href="https://metalogai.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              Developed by: MetaLog Inc. &reg; 2024
+            </Link>
           </p>
         </div>
       </div>
