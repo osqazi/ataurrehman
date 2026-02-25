@@ -161,7 +161,7 @@
   {
     "id": "mudassir-abbasi",
     "name": "Mudassir Abbasi",
-    "position": "Advocate of the High Court / Associate",
+    "position": "Advocate High Court / Associate",
     "image": "/teamImg/mudassir.webp",
     "image2": "/teamIdImg/mudassir2.webp",
     "bio": "Advocate of the High Court. Assists in matters at the District Court and superior Court. Represents clients in Service/Employment Law, Banking and NAB matters. Completed a Legal Practice Course and LLM focusing on commercial and banking law in the UK.",
@@ -201,10 +201,10 @@
   {
     "id": "sabih-ahmed-zubairi",
     "name": "Sabih Ahmed Zubairi",
-    "position": "Practicing Advocate / Associate",
+    "position": "Advocate High Court",
     "image": "/teamImg/sabih.webp",
     "image2": "/teamIdImg/sabih2.webp",
-    "bio": "Practicing advocate of the High Courts of Pakistan. Joined the office in December 2018. Has in-house and corporate legal experience from a previous role and internships. His practice includes commercial, civil, constitutional, criminal, and service matters.",
+    "bio": "Practicing advocate of the High Courts of Pakistan. Joined the office in December 2018. Has in-house and corporate legal experience from previous roles and internships. His practice includes commercial, civil, constitutional, criminal, and service matters.",
     "email": "saz@arclaws.com",
     "phone": "0300-8979888",
     "expertise": [
@@ -223,12 +223,15 @@
       "experience": [
         "Joined Ata-ur-Rahman & Co. in December 2018",
         "Associate legal affairs at KE",
-        "Completed pupilage from chambers of Mr. Makhdoom Ali Khan",
-        "Completed pupilage from chambers of Mr. Muhammad Farogh Naseem",
+        "Completed pupilage from chambers of Mr. Makhdoom Ali Khan of Fazalghani Advocates",
+        "Worked as Associate in Mohammad Farogh Naseem & Co. Advocates",
+        "Worked as a paralegal in Mohsin Tayebaly & Co.",
         "Reported case cited as SBLR 2020 Sindh 1677"
       ],
       "memberships": [
-        "Practicing advocate of the High Courts of Pakistan"
+        "Sindh Bar Council",
+        "Sindh High Court Bar Association",
+        "Karachi Bar Association"
       ],
       "appointments": [
         "Joined Ata-ur-Rahman & Co.: December 2018"
@@ -238,7 +241,7 @@
   {
     "id": "saleem-raza-jakhar",
     "name": "Saleem Raza Jakhar",
-    "position": "Advocate of the High Court",
+    "position": "Advocate High Court",
     "image": "/teamImg/saleem.webp",
     "image2": "/teamIdImg/saleem2.webp",
     "bio": "Advocate of the High Court of Pakistan. Commenced his legal career in 2006. Regularly appears before District Courts and Superior Courts. Joined Ata-ur-Rahman & Co. in October 2023. Practice areas include civil, constitutional, criminal, and service law matters.",
