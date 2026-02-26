@@ -351,16 +351,16 @@ export default function Header() {
   </div>
   <div className="flex flex-col">
     <span className={`${playfair.className} text-2xl font-semibold text-gray-900 italic tracking-tight`}>
-      <span className="text-2xl md:text-4xl text-primary-700 font-bold italic mr-0.5">A</span>
+      <span className={`${playfair.className} text-2xl md:text-4xl text-primary-700 font-bold italic mr-0.5`}>A</span>
       ta-ur-Rahman & Co.
     </span>
-    <span className={`${playfair.className} text-sm md:text-lg font-light text-gray-600 italic tracking-wide mt-1`}>
+    <span className={`${playfair.className} text-sm md:text-lg font-light text-gray-600 italic tracking-wide`}>
       Legal Consultants and Advocates
     </span>
   </div>
 </Link>
           {/* Desktop Navigation - Semantic nav with aria-label */}
-          <nav className="hidden md:flex space-x-8" aria-label="Main navigation">
+          <nav className="hidden md:flex space-x-8 mr-10" aria-label="Main navigation">
             <Link
               href="/"
               className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
