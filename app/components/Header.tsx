@@ -317,7 +317,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Scale, Menu, X } from "lucide-react";
 import Image from 'next/image';
-
+import { Arizonia } from 'next/font/google'
 import { Playfair_Display } from 'next/font/google';
 
 const playfair = Playfair_Display({
@@ -326,6 +326,12 @@ const playfair = Playfair_Display({
   style: ['normal', 'italic'],
   display: 'swap', // Performance optimization for font loading
 });
+
+export const arizonia = Arizonia({
+  weight: '400', // Arizonia only has weight 400
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 
 export default function Header() {
@@ -336,7 +342,7 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex justify-between items-center py-0">
 
-<Link href="/" className="flex items-center space-x-2 md:space-x-3 -mb-0 md:-mb-2">
+<Link href="/" className="flex items-center space-x-2 md:space-x-3 -mb-0 md:-my-2 ">
   <div className="relative -mb-6 md:-mb-10">
     <div className="bg-white rounded-full p-1.5 md:p-4 shadow-md">
       <Image
@@ -351,10 +357,10 @@ export default function Header() {
   </div>
   <div className="flex flex-col">
     <span className={`${playfair.className} text-2xl font-semibold text-gray-900 italic tracking-tight`}>
-      <span className={`${playfair.className} text-2xl md:text-4xl text-primary-700 font-bold italic mr-0.5`}>A</span>
+      <span className={`${arizonia.className} text-2xl md:text-5xl text-primary-600 font-bold italic mr-0.5`}>A</span>
       ta-ur-Rahman & Co.
     </span>
-    <span className={`${playfair.className} text-sm md:text-lg font-light text-gray-600 italic tracking-wide`}>
+    <span className={`${playfair.className} md:-mt-2 text-sm md:text-lg font-light text-gray-600 italic tracking-wide`}>
       Legal Consultants and Advocates
     </span>
   </div>
@@ -363,44 +369,44 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8 mr-10" aria-label="Main navigation">
             <Link
               href="/"
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
             >
               Home
             </Link>
             <Link
               href="/services"
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
             >
               Services
             </Link>
             <Link
               href="/team"
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
             >
               Our Team
             </Link>
             <Link
               href="/cases"
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
             >
               Notable Cases
             </Link>
             <Link
               href="/publications"
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
             >
               Publications
             </Link>
             <Link
               href="/shc-cases"
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
             >
               Case Status
             </Link>
 
             <Link
               href="/contact"
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-600 font-medium transition-colors relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary-600 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
             >
               Contact
             </Link>

@@ -167,7 +167,7 @@ export default function Team() {
               <div className="text-gray-600">Cases Handled</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">9</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">8</div>
               <div className="text-gray-600">Expert Lawyers</div>
             </div>
           </div>

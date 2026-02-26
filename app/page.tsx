@@ -110,7 +110,7 @@ const officeSections = [
     id: 5,
     image: "/office5.webp",
     title: "Professional Team",
-    content: "The practice has a total strength of 7 lawyers, 4 court clerks and a stenographer. Our team combines decades of experience with fresh perspectives to provide comprehensive legal solutions.",
+    content: "The practice has a strength of 8 lawyers which enable it look after cases all over the city of Karachi and Countrywide.",
     icon: <TeamIcon className="h-6 w-6" />
   },
   {
@@ -221,7 +221,7 @@ const AlternatingSection = ({ section, index }: AlternatingSectionProps) => {
             {section.id === 5 && (
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-3 bg-primary-50 rounded-lg">
-                  <div className="text-xl font-bold text-primary-700">7</div>
+                  <div className="text-xl font-bold text-primary-700">8</div>
                   <div className="text-sm text-gray-600">Lawyers</div>
                 </div>
                 <div className="text-center p-3 bg-primary-50 rounded-lg">
@@ -314,7 +314,7 @@ export default function Home() {
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="text-center p-6 bg-primary-50 rounded-xl">
-              <div className="text-3xl font-bold text-primary-700 mb-2">9</div>
+              <div className="text-3xl font-bold text-primary-700 mb-2">8</div>
               <div className="text-gray-600">Expert Lawyers</div>
             </div>
             <div className="text-center p-6 bg-primary-50 rounded-xl">
