@@ -21,7 +21,6 @@ export interface Author {
 // Publication categories for filtering
 export const categories = [
   "All",
-  "International Law",
   "Corporate Law",
   "Criminal Defense",
   "Arbitration",
