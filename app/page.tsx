@@ -217,7 +217,7 @@ const AlternatingSection = ({ section, index }: AlternatingSectionProps) => {
                 </p>
               </div>
             )}
-            
+{/*             
             {section.id === 5 && (
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-3 bg-primary-50 rounded-lg">
@@ -229,7 +229,7 @@ const AlternatingSection = ({ section, index }: AlternatingSectionProps) => {
                   <div className="text-sm text-gray-600">Court Clerks</div>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
